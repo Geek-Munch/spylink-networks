@@ -35,7 +35,9 @@ const OrderTrackingPage = () => {
   const fetchOrderDetails = async () => {
     try {
       const token = localStorage.getItem('access_token');
-      const response = await fetch(`${API_URL}/orders/${orderId}/`, {...});
+      const response = await fetch(`${API_URL}/orders/${orderId}/`, {
+  headers: { 'Authorization': `Bearer ${token}` }
+})
       
       if (response.ok) {
         const data = await response.json();

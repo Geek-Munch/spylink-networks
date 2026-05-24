@@ -43,8 +43,8 @@ const DashboardPage = () => {
     try {
       const [profileRes, subsRes, ordersRes, paymentsRes] = await Promise.all([
         fetch(`${API_URL}/auth/profile/`, {
-          headers: { 'Authorization': `Bearer ${token}` }
-        }),
+           headers: { 'Authorization': `Bearer ${token}` }
+         }),
         fetch(`${API_URL}/subscriptions/`, {
           headers: { 'Authorization': `Bearer ${token}` }
         }),

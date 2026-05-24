@@ -12,7 +12,19 @@ export const mpesaService = {
    */
   async initiatePayment(phoneNumber, amount, accountReference, transactionDesc) {
     try {
-      const response = await fetch(`${API_URL}/payments/mpesa/initiate/`, {...});
+      const response = await fetch(`${API_URL}/payments/mpesa/initiate/`, {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+    'Authorization': token ? `Bearer ${token}` : ''
+  },
+  body: JSON.stringify({
+    phone_number: phoneNumber,
+    amount: amount,
+    account_reference: accountReference,
+    transaction_desc: transactionDesc
+  })
+});
       return response.data;
     } catch (error) {
       console.error('M-Pesa payment error:', error);
@@ -27,9 +39,14 @@ export const mpesaService = {
    */
   async checkPaymentStatus(checkoutRequestId) {
     try {
-      const response = await api.post('/payments/mpesa/status/', {
-        checkout_request_id: checkoutRequestId
-      });
+      const response = await fetch(`${API_URL}/payments/mpesa/status/`, {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+    'Authorization': token ? `Bearer ${token}` : ''
+  },
+  body: JSON.stringify({ checkout_request_id: checkoutRequestId })
+});
       return response.data;
     } catch (error) {
       console.error('Status check error:', error);

@@ -27,8 +27,20 @@ const ProfilePage = () => {
   const fetchProfile = async () => {
     try {
       const token = localStorage.getItem('access_token');
-      const response = await fetch(`${API_URL}/auth/profile/`, {...})
-          await fetch(`${API_URL}/auth/change-password/`, {...});
+      const response = await fetch(`${API_URL}/auth/profile/`, {
+  headers: { 'Authorization': `Bearer ${token}` }
+})
+          await fetch(`${API_URL}/auth/change-password/`, {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+    'Authorization': `Bearer ${token}`
+  },
+  body: JSON.stringify({
+    old_password: passwordData.old_password,
+    new_password: passwordData.new_password
+  })
+})
       
       if (response.ok) {
         const data = await response.json();
