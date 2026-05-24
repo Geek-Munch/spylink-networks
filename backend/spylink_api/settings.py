@@ -2,14 +2,17 @@ import os
 from pathlib import Path
 from decouple import config
 from datetime import timedelta
-import dj_database_url 
+import dj_database_url
 
+# Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=True, cast=bool)
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='localhost').split(',')
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='localhost,127.0.0.1').split(',')
 
+# Application definition
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -36,6 +39,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',  # WhiteNoise for static files
     'corsheaders.middleware.CorsMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -65,17 +69,31 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'spylink_api.wsgi.application'
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'spylink_db',
-        'USER': 'spylink_user',
-        'PASSWORD': 'spylink123',
-        'HOST': 'localhost',
-        'PORT': '5432',
+# Database Configuration - Works for both local and production
+# Check if DATABASE_URL is provided (Render production) - use it
+# Otherwise use local PostgreSQL settings
+DATABASE_URL = os.environ.get('DATABASE_URL')
+if DATABASE_URL:
+    DATABASES = {
+        'default': dj_database_url.config(
+            default=DATABASE_URL,
+            conn_max_age=600,
+            conn_health_checks=True,
+        )
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': config('DB_NAME', default='spylink_db'),
+            'USER': config('DB_USER', default='spylink_user'),
+            'PASSWORD': config('DB_PASSWORD', default='spylink123'),
+            'HOST': config('DB_HOST', default='localhost'),
+            'PORT': config('DB_PORT', default='5432'),
+        }
+    }
 
+# Password validation
 AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'},
     {'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator'},
@@ -83,16 +101,22 @@ AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator'},
 ]
 
+# Internationalization
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'Africa/Nairobi'
 USE_I18N = True
 USE_TZ = True
 
-STATIC_URL = 'static/'
-STATIC_ROOT = BASE_DIR / 'static'
-MEDIA_URL = 'media/'
-MEDIA_ROOT = BASE_DIR / 'media'
+# Static files (CSS, JavaScript, Images)
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
+# Media files
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Custom User Model
@@ -120,33 +144,35 @@ SIMPLE_JWT = {
     'ROTATE_REFRESH_TOKENS': True,
 }
 
-# CORS
+# CORS Settings
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
+    "https://spylink-networks.vercel.app",  # Your Vercel frontend
+    "https://spylink-backend.onrender.com",
 ]
 CORS_ALLOW_CREDENTIALS = True
 
 # M-Pesa Settings
-MPESA_CONSUMER_KEY = config('MPESA_CONSUMER_KEY')
-MPESA_CONSUMER_SECRET = config('MPESA_CONSUMER_SECRET')
-MPESA_PASSKEY = config('MPESA_PASSKEY')
-MPESA_SHORTCODE = config('MPESA_SHORTCODE')
-MPESA_CALLBACK_URL = config('MPESA_CALLBACK_URL')
+MPESA_CONSUMER_KEY = config('MPESA_CONSUMER_KEY', default='')
+MPESA_CONSUMER_SECRET = config('MPESA_CONSUMER_SECRET', default='')
+MPESA_PASSKEY = config('MPESA_PASSKEY', default='')
+MPESA_SHORTCODE = config('MPESA_SHORTCODE', default='174379')
+MPESA_CALLBACK_URL = config('MPESA_CALLBACK_URL', default='https://spylink-backend.onrender.com/api/payments/mpesa/callback/')
 
 # Email Configuration
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'  # Or your email provider
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'rumwihaki@gmail.com'  # Your email
-EMAIL_HOST_PASSWORD = 'xzcuifiszsmolvyk'  # App password
-DEFAULT_FROM_EMAIL = 'Spylink Networks <rumwihaki@gmail.com>'
-EMAIL_SUBJECT_PREFIX = '[Spylink] '
+EMAIL_HOST = config('EMAIL_HOST', default='smtp.gmail.com')
+EMAIL_PORT = config('EMAIL_PORT', default=587, cast=int)
+EMAIL_USE_TLS = config('EMAIL_USE_TLS', default=True, cast=bool)
+EMAIL_HOST_USER = config('EMAIL_HOST_USER', default='')
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD', default='')
+DEFAULT_FROM_EMAIL = f'Spylink Networks <{EMAIL_HOST_USER}>'
 
-FRONTEND_URL = config('FRONTEND_URL', default='http://localhost:5173')
+# Frontend URL for emails
+FRONTEND_URL = config('FRONTEND_URL', default='https://spylink-networks.vercel.app')
 
-# Contact email
+# Contact email for form submissions
 CONTACT_EMAIL = config('CONTACT_EMAIL', default='info@spylink.co.ke')
 
 # Security settings for production
@@ -156,100 +182,3 @@ if not DEBUG:
     CSRF_COOKIE_SECURE = True
     SECURE_BROWSER_XSS_FILTER = True
     SECURE_CONTENT_TYPE_NOSNIFF = True
-    
-# Allowed hosts - add your domain after deployment
-ALLOWED_HOSTS = ['*']  # Update with your actual domain after deployment
-
-# Static files for production
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
-# Media files
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-# Update CORS for production
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
-    "http://127.0.0.1:5173",
-    "https://your-frontend-domain.vercel.app",  # Add after deployment
-]
-CORS_ALLOW_CREDENTIALS = True
-
-# At the bottom of settings.py:
-
-# Database - Use Railway's PostgreSQL
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('PGDATABASE', 'spylink_db'),
-        'USER': os.environ.get('PGUSER', 'spylink_user'),
-        'PASSWORD': os.environ.get('PGPASSWORD', ''),
-        'HOST': os.environ.get('PGHOST', 'localhost'),
-        'PORT': os.environ.get('PGPORT', '5432'),
-    }
-}
-
-# Static files
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
-# Media files
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-# Add WhiteNoise middleware
-MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',  # Add this
-    'corsheaders.middleware.CorsMiddleware',
-    # ... rest
-]
-
-# Allowed hosts - allow Railway domain
-ALLOWED_HOSTS = ['*']
-
-# CORS - allow frontend
-CORS_ALLOWED_ORIGINS = [
-    "https://*.vercel.app",
-    "https://*.railway.app",
-    "http://localhost:5173",
-    "http://127.0.0.1:5173",
-]
-
-# At the very bottom of settings.py:
-
-# Database - Use DATABASE_URL if available (for Render)
-DATABASES = {
-    'default': dj_database_url.config(
-        default=config('DATABASE_URL'),
-        conn_max_age=600,
-        conn_health_checks=True,
-    )
-}
-
-# Static files for production
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
-# Add whitenoise middleware
-MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',  # Add this line
-    'corsheaders.middleware.CorsMiddleware',
-    # ... rest of middleware
-]
-
-# Allowed hosts
-ALLOWED_HOSTS = ['*']
-
-# CORS
-CORS_ALLOWED_ORIGINS = [
-    "https://*.onrender.com",
-    "https://*.vercel.app",
-    "http://localhost:5173",
-    "http://127.0.0.1:5173",
-]
