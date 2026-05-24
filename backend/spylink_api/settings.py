@@ -2,6 +2,7 @@ import os
 from pathlib import Path
 from decouple import config
 from datetime import timedelta
+import dj_database_url 
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -221,10 +222,13 @@ CORS_ALLOWED_ORIGINS = [
 # At the very bottom of settings.py:
 
 # Database - Use DATABASE_URL if available (for Render)
-if os.environ.get('DATABASE_URL'):
-    DATABASES = {
-        'default': dj_database_url.config(default=os.environ['DATABASE_URL'])
-    }
+DATABASES = {
+    'default': dj_database_url.config(
+        default=config('DATABASE_URL'),
+        conn_max_age=600,
+        conn_health_checks=True,
+    )
+}
 
 # Static files for production
 STATIC_URL = '/static/'
