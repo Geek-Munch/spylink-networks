@@ -1,15 +1,19 @@
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from rest_framework_simplejwt.views import TokenRefreshView
 from packages.views import PackageViewSet
 from subscriptions.views import SubscriptionViewSet
 from products.views import CategoryViewSet, ProductViewSet
 from orders.views import OrderViewSet
-from payments.views import PaymentViewSet, mpesa_callback, initiate_mpesa_payment, check_payment_status
-from accounts.views import RegisterView, LoginView, ProfileView, change_password, verify_email, resend_verification
+from payments.views import PaymentViewSet, mpesa_callback
+from accounts.views import (
+    RegisterView, LoginView, ProfileView, change_password,
+    verify_email, resend_verification, forgot_password,
+    verify_reset_code, reset_password
+)
 from core.views import contact_us
 
+# Create router
 router = DefaultRouter()
 router.register(r'packages', PackageViewSet, basename='package')
 router.register(r'subscriptions', SubscriptionViewSet, basename='subscription')
@@ -21,9 +25,8 @@ router.register(r'payments', PaymentViewSet, basename='payment')
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
-    path('api/contact/', contact_us, name='contact_us'),
     
-    # Authentication endpoints
+    # Auth endpoints
     path('api/auth/register/', RegisterView.as_view(), name='register'),
     path('api/auth/login/', LoginView.as_view(), name='login'),
     path('api/auth/profile/', ProfileView.as_view(), name='profile'),
@@ -34,8 +37,9 @@ urlpatterns = [
     path('api/auth/verify-reset-code/', verify_reset_code, name='verify_reset_code'),
     path('api/auth/reset-password/', reset_password, name='reset_password'),
     
-    # M-Pesa callback endpoint
+    # Contact
+    path('api/contact/', contact_us, name='contact_us'),
+    
+    # M-Pesa
     path('api/payments/mpesa/callback/', mpesa_callback, name='mpesa_callback'),
-    path('api/payments/mpesa/initiate/', initiate_mpesa_payment, name='initiate_mpesa_payment'),
-path('api/payments/mpesa/status/', check_payment_status, name='check_payment_status'),
 ]

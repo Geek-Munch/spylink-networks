@@ -92,7 +92,7 @@ def change_password(request):
     user.save()
     
     return Response({'message': 'Password changed successfully'}, status=status.HTTP_200_OK)
-
+   
 @api_view(['POST'])
 @permission_classes([permissions.AllowAny])
 def verify_email(request):
