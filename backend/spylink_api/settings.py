@@ -147,3 +147,73 @@ FRONTEND_URL = config('FRONTEND_URL', default='http://localhost:5173')
 
 # Contact email
 CONTACT_EMAIL = config('CONTACT_EMAIL', default='info@spylink.co.ke')
+
+# Security settings for production
+if not DEBUG:
+    SECURE_SSL_REDIRECT = True
+    SESSION_COOKIE_SECURE = True
+    CSRF_COOKIE_SECURE = True
+    SECURE_BROWSER_XSS_FILTER = True
+    SECURE_CONTENT_TYPE_NOSNIFF = True
+    
+# Allowed hosts - add your domain after deployment
+ALLOWED_HOSTS = ['*']  # Update with your actual domain after deployment
+
+# Static files for production
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+# Media files
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# Update CORS for production
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+    "https://your-frontend-domain.vercel.app",  # Add after deployment
+]
+CORS_ALLOW_CREDENTIALS = True
+
+# At the bottom of settings.py:
+
+# Database - Use Railway's PostgreSQL
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.environ.get('PGDATABASE', 'spylink_db'),
+        'USER': os.environ.get('PGUSER', 'spylink_user'),
+        'PASSWORD': os.environ.get('PGPASSWORD', ''),
+        'HOST': os.environ.get('PGHOST', 'localhost'),
+        'PORT': os.environ.get('PGPORT', '5432'),
+    }
+}
+
+# Static files
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+# Media files
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# Add WhiteNoise middleware
+MIDDLEWARE = [
+    'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',  # Add this
+    'corsheaders.middleware.CorsMiddleware',
+    # ... rest
+]
+
+# Allowed hosts - allow Railway domain
+ALLOWED_HOSTS = ['*']
+
+# CORS - allow frontend
+CORS_ALLOWED_ORIGINS = [
+    "https://*.vercel.app",
+    "https://*.railway.app",
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+]
