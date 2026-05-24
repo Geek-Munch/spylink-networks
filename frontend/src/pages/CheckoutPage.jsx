@@ -5,8 +5,8 @@ import toast from 'react-hot-toast';
 import MpesaPaymentModal from '../components/Common/MpesaPaymentModal';
 import { API_URL } from '../config';
 
-const response = await fetch(`${API_URL}/payments/mpesa/initiate/`, {...})
-const response = await fetch(`${API_URL}/payments/mpesa/status/`, {...})
+//const response = await fetch(`${API_URL}/payments/mpesa/initiate/`, {...})
+//const response = await fetch(`${API_URL}/payments/mpesa/status/`, {...})
 
 const CheckoutPage = () => {
   const [cart, setCart] = useState([]);

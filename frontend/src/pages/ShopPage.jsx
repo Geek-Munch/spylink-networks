@@ -45,21 +45,20 @@ const ShopPage = () => {
   };
 
   const fetchCategories = async () => {
-    try {
-      const response = await fetch(`${API_URL}/products/`);
-      const response = await fetch(`${API_URL}/categories/`);
-      const data = await response.json();
-      let categoriesArray = [];
-      if (data.results && Array.isArray(data.results)) {
-        categoriesArray = data.results;
-      } else if (Array.isArray(data)) {
-        categoriesArray = data;
-      }
-      setCategories(categoriesArray);
-    } catch (error) {
-      console.error('Error fetching categories:', error);
+  try {
+    const response = await fetch(`${API_URL}/categories/`);
+    const data = await response.json();
+    let categoriesArray = [];
+    if (data.results && Array.isArray(data.results)) {
+      categoriesArray = data.results;
+    } else if (Array.isArray(data)) {
+      categoriesArray = data;
     }
-  };
+    setCategories(categoriesArray);
+  } catch (error) {
+    console.error('Error fetching categories:', error);
+  }
+};
 
   const filterProducts = () => {
     let filtered = [...products];

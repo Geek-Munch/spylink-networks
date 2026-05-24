@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Mail, CheckCircle, AlertCircle, RefreshCw } from 'lucide-react';
+import { Mail, CheckCircle, RefreshCw } from 'lucide-react';
 import toast from 'react-hot-toast';
 import { API_URL } from '../config';
 
@@ -53,8 +53,11 @@ const VerifyEmailPage = () => {
 
     setLoading(true);
     try {
-      const response = await fetch(`${API_URL}/auth/verify-email/`, {...})
-    const response = await fetch(`${API_URL}/auth/resend-verification/`, {...})
+      const response = await fetch(`${API_URL}/auth/verify-email/`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ user_id: userId, code: verificationCode })
+      });
 
       const data = await response.json();
       if (response.ok) {
@@ -79,7 +82,7 @@ const VerifyEmailPage = () => {
   const handleResend = async () => {
     setResending(true);
     try {
-      const response = await fetch('http://127.0.0.1:8000/api/auth/resend-verification/', {
+      const response = await fetch(`${API_URL}/auth/resend-verification/`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ user_id: userId })
