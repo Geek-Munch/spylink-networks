@@ -1,0 +1,11 @@
+{
+  "services": [
+    {
+      "name": "backend",
+      "root": "backend",
+      "buildCommand": "pip install -r requirements.txt",
+      "startCommand": "gunicorn spylink_api.wsgi:application",
+      "healthcheckPath": "/api/packages/"
+    }
+  ]
+}
