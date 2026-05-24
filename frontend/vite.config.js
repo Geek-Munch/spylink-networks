@@ -1,21 +1,17 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  define: {
-    'process.env': {}
-  },
   build: {
     outDir: 'dist',
     sourcemap: false,
     rollupOptions: {
       output: {
-        manualChunks: {
-          vendor: ['react', 'react-dom', 'react-router-dom'],
-          icons: ['lucide-react', '@heroicons/react'],
-          charts: ['chart.js', 'react-chartjs-2']
-        }
+        entryFileNames: 'assets/[name].js',
+        chunkFileNames: 'assets/[name].js',
+        assetFileNames: 'assets/[name].[ext]'
       }
     }
   },
