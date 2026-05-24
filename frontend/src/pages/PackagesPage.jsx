@@ -16,25 +16,24 @@ const PackagesPage = () => {
   }, []);
 
   const fetchPackages = async () => {
-    try {
-      const response = await fetch(`${API_URL}/packages/`);
-const response = await fetch(`${API_URL}/subscriptions/subscribe/`, {...})
-      const data = await response.json();
-      
-      if (data.results && Array.isArray(data.results)) {
-        setPackages(data.results);
-      } else if (Array.isArray(data)) {
-        setPackages(data);
-      } else {
-        setPackages([]);
-      }
-    } catch (error) {
-      console.error('Error fetching packages:', error);
-      toast.error('Failed to load packages');
-    } finally {
-      setLoading(false);
+  try {
+    const response = await fetch(`${API_URL}/packages/`);
+    const data = await response.json();
+    
+    if (data.results && Array.isArray(data.results)) {
+      setPackages(data.results);
+    } else if (Array.isArray(data)) {
+      setPackages(data);
+    } else {
+      setPackages([]);
     }
-  };
+  } catch (error) {
+    console.error('Error fetching packages:', error);
+    toast.error('Failed to load packages');
+  } finally {
+    setLoading(false);
+  }
+};
 
   const handleSubscribeClick = (pkg) => {
     const token = localStorage.getItem('access_token');
