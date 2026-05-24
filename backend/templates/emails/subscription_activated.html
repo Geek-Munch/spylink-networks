@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Subscription Activated - Spylink Networks</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+    .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+    .header { background: linear-gradient(135deg, #0A2463, #00A896); color: white; padding: 30px; text-align: center; border-radius: 10px 10px 0 0; }
+    .content { background: #f9f9f9; padding: 30px; border-radius: 0 0 10px 10px; }
+    .subscription-details { background: white; padding: 15px; border-radius: 5px; margin: 15px 0; border: 1px solid #ddd; }
+    .button { display: inline-block; padding: 12px 24px; background: #00A896; color: white; text-decoration: none; border-radius: 5px; margin-top: 20px; }
+    .footer { text-align: center; margin-top: 20px; font-size: 12px; color: #666; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">Spylink Networks</div>
+      <h1>Subscription Activated!</h1>
+    </div>
+    <div class="content">
+      <p>Dear {{ username }},</p>
+      <p>Your internet subscription has been activated! Welcome to Spylink Networks.</p>
+      
+      <div class="subscription-details">
+        <h3>{{ package_name }}</h3>
+        <p><strong>Speed:</strong> {{ speed }}</p>
+        <p><strong>Monthly Fee:</strong> KES {{ price }}</p>
+        <p><strong>Valid until:</strong> {{ end_date }}</p>
+        <p><strong>Auto-renewal:</strong> {{ auto_renew }}</p>
+      </div>
+      
+      <p>What's included:</p>
+      <ul>
+        <li>Unlimited internet access</li>
+        <li>24/7 technical support</li>
+        <li>Free router (with annual plan)</li>
+      </ul>
+      
+      <a href="{{ frontend_url }}/dashboard" class="button">Manage Subscription</a>
+      
+      <p style="margin-top: 20px;">Need assistance? Contact us anytime!</p>
+      <p>Best regards,<br>The Spylink Networks Team</p>
+    </div>
+    <div class="footer">
+      <p>&copy; 2025 Spylink Networks. All rights reserved.</p>
+    </div>
+  </div>
+</body>
+</html>

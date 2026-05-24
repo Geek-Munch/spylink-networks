@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Spylink Networks</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+    .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+    .header { background: linear-gradient(135deg, #0A2463, #00A896); color: white; padding: 30px; text-align: center; border-radius: 10px 10px 0 0; }
+    .content { background: #f9f9f9; padding: 30px; border-radius: 0 0 10px 10px; }
+    .button { display: inline-block; padding: 12px 24px; background: #00A896; color: white; text-decoration: none; border-radius: 5px; margin-top: 20px; }
+    .footer { text-align: center; margin-top: 20px; font-size: 12px; color: #666; }
+    .logo { font-size: 24px; font-weight: bold; margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">Spylink Networks</div>
+      <h1>Welcome {{ username }}!</h1>
+    </div>
+    <div class="content">
+      <p>Dear {{ username }},</p>
+      <p>Thank you for joining Spylink Networks! We're excited to have you on board.</p>
+      <p>You now have access to:</p>
+      <ul>
+        <li>Fast and reliable internet packages</li>
+        <li>Quality networking equipment</li>
+        <li>24/7 customer support</li>
+        <li>Easy online account management</li>
+      </ul>
+      <p>Get started by exploring our internet packages and shop for networking devices.</p>
+      <a href="{{ frontend_url }}/packages" class="button">View Packages</a>
+      <p style="margin-top: 20px;">If you have any questions, feel free to contact our support team.</p>
+      <p>Best regards,<br>The Spylink Networks Team</p>
+    </div>
+    <div class="footer">
+      <p>&copy; 2025 Spylink Networks. All rights reserved.</p>
+      <p>Bungoma, Kenya | WhatsApp: 0740370328</p>
+    </div>
+  </div>
+</body>
+</html>

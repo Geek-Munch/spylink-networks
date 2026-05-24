@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Order Confirmation - Spylink Networks</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+    .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+    .header { background: linear-gradient(135deg, #0A2463, #00A896); color: white; padding: 30px; text-align: center; border-radius: 10px 10px 0 0; }
+    .content { background: #f9f9f9; padding: 30px; border-radius: 0 0 10px 10px; }
+    .order-details { background: white; padding: 15px; border-radius: 5px; margin: 15px 0; border: 1px solid #ddd; }
+    .total { font-size: 18px; font-weight: bold; color: #00A896; }
+    .button { display: inline-block; padding: 12px 24px; background: #00A896; color: white; text-decoration: none; border-radius: 5px; margin-top: 20px; }
+    .footer { text-align: center; margin-top: 20px; font-size: 12px; color: #666; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">Spylink Networks</div>
+      <h1>Order Confirmed!</h1>
+    </div>
+    <div class="content">
+      <p>Dear {{ username }},</p>
+      <p>Thank you for your order! Your order has been received and is being processed.</p>
+      
+      <div class="order-details">
+        <h3>Order #{{ order_number }}</h3>
+        <p><strong>Order Date:</strong> {{ order_date }}</p>
+        <p><strong>Payment Method:</strong> M-Pesa</p>
+        <hr>
+        <h4>Items Ordered:</h4>
+        {% for item in items %}
+        <p>{{ item.quantity }}x {{ item.name }} - KES {{ item.price }}</p>
+        {% endfor %}
+        <hr>
+        <p><strong>Subtotal:</strong> KES {{ subtotal }}</p>
+        <p><strong>Shipping:</strong> KES {{ shipping_cost }}</p>
+        <p class="total"><strong>Total:</strong> KES {{ total }}</p>
+      </div>
+      
+      <p><strong>Shipping Address:</strong><br>{{ shipping_address }}</p>
+      
+      <p>You can track your order status from your dashboard.</p>
+      <a href="{{ frontend_url }}/dashboard" class="button">Track Order</a>
+      
+      <p style="margin-top: 20px;">Thank you for choosing Spylink Networks!</p>
+      <p>Best regards,<br>The Spylink Networks Team</p>
+    </div>
+    <div class="footer">
+      <p>&copy; 2025 Spylink Networks. All rights reserved.</p>
+      <p>Need help? Contact us on WhatsApp: 0740370328</p>
+    </div>
+  </div>
+</body>
+</html>

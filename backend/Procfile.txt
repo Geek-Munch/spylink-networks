@@ -1,0 +1,1 @@
+web: gunicorn spylink_api.wsgi:application
