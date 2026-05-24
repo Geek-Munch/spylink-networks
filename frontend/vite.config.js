@@ -3,6 +3,22 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
+  define: {
+    'process.env': {}
+  },
+  build: {
+    outDir: 'dist',
+    sourcemap: false,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom', 'react-router-dom'],
+          icons: ['lucide-react', '@heroicons/react'],
+          charts: ['chart.js', 'react-chartjs-2']
+        }
+      }
+    }
+  },
   server: {
     port: 5173,
     proxy: {

@@ -217,3 +217,35 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
 ]
+
+# At the very bottom of settings.py:
+
+# Database - Use DATABASE_URL if available (for Render)
+if os.environ.get('DATABASE_URL'):
+    DATABASES = {
+        'default': dj_database_url.config(default=os.environ['DATABASE_URL'])
+    }
+
+# Static files for production
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+# Add whitenoise middleware
+MIDDLEWARE = [
+    'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',  # Add this line
+    'corsheaders.middleware.CorsMiddleware',
+    # ... rest of middleware
+]
+
+# Allowed hosts
+ALLOWED_HOSTS = ['*']
+
+# CORS
+CORS_ALLOWED_ORIGINS = [
+    "https://*.onrender.com",
+    "https://*.vercel.app",
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+]
