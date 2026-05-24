@@ -11,10 +11,8 @@ import {
   XCircle, 
   AlertCircle,
   ArrowRight,
-  Package,
   User,
-  Settings,
-  LogOut
+  Settings
 } from 'lucide-react';
 import { Line } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, Filler } from 'chart.js';
@@ -44,10 +42,18 @@ const DashboardPage = () => {
   const fetchDashboardData = async (token) => {
     try {
       const [profileRes, subsRes, ordersRes, paymentsRes] = await Promise.all([
-        fetch(`${API_URL}/auth/profile/`, {...})
-        fetch(`${API_URL}/subscriptions/`, {...})
-        fetch(`${API_URL}/orders/`, {...})
-        fetch(`${API_URL}/payments/`, {...})
+        fetch(`${API_URL}/auth/profile/`, {
+          headers: { 'Authorization': `Bearer ${token}` }
+        }),
+        fetch(`${API_URL}/subscriptions/`, {
+          headers: { 'Authorization': `Bearer ${token}` }
+        }),
+        fetch(`${API_URL}/orders/`, {
+          headers: { 'Authorization': `Bearer ${token}` }
+        }),
+        fetch(`${API_URL}/payments/`, {
+          headers: { 'Authorization': `Bearer ${token}` }
+        })
       ]);
 
       const userData = await profileRes.json();
@@ -73,7 +79,7 @@ const DashboardPage = () => {
   const cancelSubscription = async (subscriptionId) => {
     try {
       const token = localStorage.getItem('access_token');
-      const response = await fetch(`http://127.0.0.1:8000/api/subscriptions/${subscriptionId}/cancel/`, {
+      const response = await fetch(`${API_URL}/subscriptions/${subscriptionId}/cancel/`, {
         method: 'POST',
         headers: { 'Authorization': `Bearer ${token}` }
       });
@@ -185,10 +191,10 @@ const DashboardPage = () => {
         </motion.div>
 
         {/* Tabs */}
-        <div className="flex gap-2 border-b border-gray-200 mb-6">
+        <div className="flex gap-2 border-b border-gray-200 mb-6 overflow-x-auto">
           <button
             onClick={() => setActiveTab('overview')}
-            className={`px-6 py-3 font-semibold transition-all duration-300 ${
+            className={`px-6 py-3 font-semibold transition-all duration-300 whitespace-nowrap ${
               activeTab === 'overview' 
                 ? 'text-primary-600 border-b-2 border-primary-600' 
                 : 'text-gray-500 hover:text-gray-700'
@@ -198,7 +204,7 @@ const DashboardPage = () => {
           </button>
           <button
             onClick={() => setActiveTab('subscriptions')}
-            className={`px-6 py-3 font-semibold transition-all duration-300 ${
+            className={`px-6 py-3 font-semibold transition-all duration-300 whitespace-nowrap ${
               activeTab === 'subscriptions' 
                 ? 'text-primary-600 border-b-2 border-primary-600' 
                 : 'text-gray-500 hover:text-gray-700'
@@ -208,7 +214,7 @@ const DashboardPage = () => {
           </button>
           <button
             onClick={() => setActiveTab('orders')}
-            className={`px-6 py-3 font-semibold transition-all duration-300 ${
+            className={`px-6 py-3 font-semibold transition-all duration-300 whitespace-nowrap ${
               activeTab === 'orders' 
                 ? 'text-primary-600 border-b-2 border-primary-600' 
                 : 'text-gray-500 hover:text-gray-700'
@@ -218,7 +224,7 @@ const DashboardPage = () => {
           </button>
           <button
             onClick={() => setActiveTab('payments')}
-            className={`px-6 py-3 font-semibold transition-all duration-300 ${
+            className={`px-6 py-3 font-semibold transition-all duration-300 whitespace-nowrap ${
               activeTab === 'payments' 
                 ? 'text-primary-600 border-b-2 border-primary-600' 
                 : 'text-gray-500 hover:text-gray-700'
@@ -228,7 +234,7 @@ const DashboardPage = () => {
           </button>
           <button
             onClick={() => setActiveTab('profile')}
-            className={`px-6 py-3 font-semibold transition-all duration-300 ${
+            className={`px-6 py-3 font-semibold transition-all duration-300 whitespace-nowrap ${
               activeTab === 'profile' 
                 ? 'text-primary-600 border-b-2 border-primary-600' 
                 : 'text-gray-500 hover:text-gray-700'
