@@ -27,10 +27,12 @@ urlpatterns = [
     path('api/auth/register/', RegisterView.as_view(), name='register'),
     path('api/auth/login/', LoginView.as_view(), name='login'),
     path('api/auth/profile/', ProfileView.as_view(), name='profile'),
-    path('api/auth/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('api/auth/change-password/', change_password, name='change_password'),
-     path('api/auth/verify-email/', verify_email, name='verify_email'),
+    path('api/auth/verify-email/', verify_email, name='verify_email'),
     path('api/auth/resend-verification/', resend_verification, name='resend_verification'),
+    path('api/auth/forgot-password/', forgot_password, name='forgot_password'),
+    path('api/auth/verify-reset-code/', verify_reset_code, name='verify_reset_code'),
+    path('api/auth/reset-password/', reset_password, name='reset_password'),
     
     # M-Pesa callback endpoint
     path('api/payments/mpesa/callback/', mpesa_callback, name='mpesa_callback'),
