@@ -12,7 +12,16 @@ from accounts.views import (
     verify_reset_code, reset_password
 )
 from core.views import contact_us
+from django.http import HttpResponse
+from django.core.management import call_command
 
+def run_migrations(request):
+    try:
+        call_command('migrate', '--noinput')
+        return HttpResponse("Migrations completed successfully")
+    except Exception as e:
+        return HttpResponse(f"Error: {e}", status=500)
+    
 # Create router
 router = DefaultRouter()
 router.register(r'packages', PackageViewSet, basename='package')
@@ -25,6 +34,7 @@ router.register(r'payments', PaymentViewSet, basename='payment')
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
+    path('run-migrations/', run_migrations),
     
     # Auth endpoints
     path('api/auth/register/', RegisterView.as_view(), name='register'),
