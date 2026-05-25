@@ -35,6 +35,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
     path('run-migrations/', run_migrations),
+    path('', include('spylink_api.simple_urls')),
     
     # Auth endpoints
     path('api/auth/register/', RegisterView.as_view(), name='register'),
