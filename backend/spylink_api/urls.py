@@ -15,6 +15,7 @@ from core.views import contact_us
 from django.http import HttpResponse
 from django.core.management import call_command
 from django.http import JsonResponse
+import traceback
 
 def health_check(request):
     return JsonResponse({"status": "ok", "message": "Spylink API is running!"})
@@ -22,9 +23,9 @@ def health_check(request):
 def run_migrations(request):
     try:
         call_command('migrate', '--noinput')
-        return HttpResponse("Migrations completed successfully")
+        return HttpResponse("Migrations completed successfully! Your database is now ready.")
     except Exception as e:
-        return HttpResponse(f"Error: {e}", status=500)
+        return HttpResponse(f"Error: {str(e)}<br><br>Traceback:<br>{traceback.format_exc()}", status=500)
     
 # Create router
 router = DefaultRouter()
@@ -36,6 +37,7 @@ router.register(r'orders', OrderViewSet, basename='order')
 router.register(r'payments', PaymentViewSet, basename='payment')
 
 urlpatterns = [
+     path('migrate/', run_migrations), 
     path('', health_check), 
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
