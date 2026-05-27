@@ -130,7 +130,7 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-            {/* Team Section - Names Overlaid on Images */}
+                  {/* Team Section - Names Overlaid on Images */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <motion.div
@@ -157,14 +157,8 @@ const AboutPage = () => {
                   src="/src/assets/images/team/ceo.jpeg" 
                   alt="Joel Njenga Maina"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  onError={(e) => {
-                    e.target.onerror = null;
-                    e.target.src = 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=500&fit=crop';
-                  }}
                 />
-                {/* Dark Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
-                {/* Text Overlay - Bottom */}
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                   <h3 className="text-xl font-bold mb-1">Joel Njenga Maina</h3>
                   <p className="text-primary-300 font-semibold text-sm">Founder & CEO</p>
@@ -182,10 +176,6 @@ const AboutPage = () => {
                   src="/src/assets/images/team/smith.jpeg" 
                   alt="Smith Juma"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  onError={(e) => {
-                    e.target.onerror = null;
-                    e.target.src = 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=500&fit=crop';
-                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
@@ -205,10 +195,6 @@ const AboutPage = () => {
                   src="/src/assets/images/team/pius.jpeg" 
                   alt="Pius Pius"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  onError={(e) => {
-                    e.target.onerror = null;
-                    e.target.src = 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=500&fit=crop';
-                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
@@ -228,10 +214,6 @@ const AboutPage = () => {
                   src="/src/assets/images/team/Ruth.jpeg" 
                   alt="Mungai Mwihaki Ruth"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  onError={(e) => {
-                    e.target.onerror = null;
-                    e.target.src = 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=500&fit=crop';
-                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
