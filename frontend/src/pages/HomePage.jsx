@@ -98,7 +98,7 @@ const HomePage = () => {
               
               <div className="mt-12 flex gap-8">
                 <div>
-                  <p className="text-3xl font-bold text-primary-600">10K+</p>
+                  <p className="text-3xl font-bold text-primary-600">1K+</p>
                   <p className="text-gray-500">Happy Customers</p>
                 </div>
                 <div>
@@ -132,18 +132,20 @@ const HomePage = () => {
                   />
                 </div>
                 <motion.div 
-  animate={{ x: [0, 10, 0] }}
-  transition={{ duration: 3, repeat: Infinity }}
-  className="absolute -bottom-3 -left-3 sm:-bottom-6 sm:-left-6 glass-card rounded-xl p-2 sm:p-4"
->
-  <div className="flex items-center gap-2 sm:gap-3">
-    <Zap className="h-6 w-6 sm:h-8 sm:w-8 text-yellow-500" />
-    <div>
-      <p className="text-xl sm:text-2xl font-bold">1 Gbps</p>
-      <p className="text-xs sm:text-sm text-gray-500">Ultra Fast Speed</p>
-    </div>
-  </div>
-</motion.div>
+            animate={{ x: [0, 10, 0] }}
+            transition={{ duration: 3, repeat: Infinity }}
+            className="absolute -bottom-3 -left-3 sm:-bottom-6 sm:-left-6 bg-white rounded-xl shadow-lg p-2 sm:p-4"
+          >
+            <div className="flex items-center gap-2 sm:gap-3">
+              <div className="bg-gradient-to-r from-yellow-400 to-yellow-500 p-2 sm:p-3 rounded-lg">
+                <Zap className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
+              </div>
+              <div>
+                <p className="text-lg sm:text-2xl font-bold text-gray-800">1 Gbps</p>
+                <p className="text-xs sm:text-sm text-gray-500">Ultra Fast Speed</p>
+              </div>
+            </div>
+          </motion.div>
               </div>
             </motion.div>
           </div>
