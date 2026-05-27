@@ -5,9 +5,6 @@ import toast from 'react-hot-toast';
 import MpesaPaymentModal from '../components/Common/MpesaPaymentModal';
 import { API_URL } from '../config';
 
-//const response = await fetch(`${API_URL}/payments/mpesa/initiate/`, {...})
-//const response = await fetch(`${API_URL}/payments/mpesa/status/`, {...})
-
 const CheckoutPage = () => {
   const [cart, setCart] = useState([]);
   const [total, setTotal] = useState(0);
@@ -109,7 +106,7 @@ const CheckoutPage = () => {
             </div>
           </div>
 
-          {/* Checkout Form */}
+          /* Checkout Form */
           <div className="bg-white rounded-xl shadow-md p-6 h-fit">
             <h2 className="text-xl font-semibold mb-4">Payment Details</h2>
             
@@ -182,4 +179,4 @@ const CheckoutPage = () => {
   );
 };
 
-export default CheckoutPage;s
+export default CheckoutPage;
