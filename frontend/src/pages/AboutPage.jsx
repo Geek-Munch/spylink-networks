@@ -154,7 +154,7 @@ const AboutPage = () => {
             <div className="group relative rounded-2xl overflow-hidden cursor-pointer">
               <div className="relative h-80 w-full">
                 <img 
-                  src="/src/assets/images/team/ceo.jpeg" 
+                  src="images/team/ceo.jpeg" 
                   alt="Joel Njenga Maina"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
@@ -173,7 +173,7 @@ const AboutPage = () => {
             <div className="group relative rounded-2xl overflow-hidden cursor-pointer">
               <div className="relative h-80 w-full">
                 <img 
-                  src="/src/assets/images/team/smith.jpeg" 
+                  src="images/team/smith.jpeg" 
                   alt="Smith Juma"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
@@ -192,7 +192,7 @@ const AboutPage = () => {
             <div className="group relative rounded-2xl overflow-hidden cursor-pointer">
               <div className="relative h-80 w-full">
                 <img 
-                  src="/src/assets/images/team/pius.jpeg" 
+                  src="images/team/pius.jpeg" 
                   alt="Pius Pius"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
@@ -211,7 +211,7 @@ const AboutPage = () => {
             <div className="group relative rounded-2xl overflow-hidden cursor-pointer">
               <div className="relative h-80 w-full">
                 <img 
-                  src="/src/assets/images/team/Ruth.jpeg" 
+                  src="images/team/Ruth.jpeg" 
                   alt="Mungai Mwihaki Ruth"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
