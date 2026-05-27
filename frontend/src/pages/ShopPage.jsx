@@ -24,8 +24,8 @@ const ShopPage = () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await fetch(`${API_URL}/products/`);
-      const data = await response.json();
+      const resProducts = await fetch(`${API_URL}/products/`);
+      const data = await resProducts.json();
       
       let productsArray = [];
       if (data.results && Array.isArray(data.results)) {
@@ -45,20 +45,20 @@ const ShopPage = () => {
   };
 
   const fetchCategories = async () => {
-  try {
-    const response = await fetch(`${API_URL}/categories/`);
-    const data = await response.json();
-    let categoriesArray = [];
-    if (data.results && Array.isArray(data.results)) {
-      categoriesArray = data.results;
-    } else if (Array.isArray(data)) {
-      categoriesArray = data;
+    try {
+      const resCategories = await fetch(`${API_URL}/categories/`);
+      const data = await resCategories.json();
+      let categoriesArray = [];
+      if (data.results && Array.isArray(data.results)) {
+        categoriesArray = data.results;
+      } else if (Array.isArray(data)) {
+        categoriesArray = data;
+      }
+      setCategories(categoriesArray);
+    } catch (error) {
+      console.error('Error fetching categories:', error);
     }
-    setCategories(categoriesArray);
-  } catch (error) {
-    console.error('Error fetching categories:', error);
-  }
-};
+  };
 
   const filterProducts = () => {
     let filtered = [...products];
@@ -115,26 +115,19 @@ const ShopPage = () => {
     setPriceRange({ min: '', max: '' });
   };
 
-  // Helper function to get the correct image URL
   const getImageUrl = (product) => {
-    // First check for image_url field (external URLs)
     if (product.image_url) {
       return product.image_url;
     }
-    // Then check for image field
     if (product.image) {
-      // If it's an external URL (starts with http), use it directly
       if (product.image.startsWith('http://') || product.image.startsWith('https://')) {
         return product.image;
       }
-      // Otherwise it's a local file, prepend the backend URL
       return `http://127.0.0.1:8000${product.image}`;
     }
-    // Return null if no image
     return null;
   };
 
-  // Default placeholder image
   const defaultImage = 'https://images.unsplash.com/photo-1583878363729-7a2b7e5f92b1?w=300';
 
   if (loading) {
@@ -159,7 +152,6 @@ const ShopPage = () => {
         {/* Search and Filter Bar */}
         <div className="bg-white rounded-xl shadow-md p-4 mb-8">
           <div className="flex flex-col md:flex-row gap-4">
-            {/* Search Input */}
             <div className="flex-1 relative">
               <MagnifyingGlassIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
               <input
@@ -171,7 +163,6 @@ const ShopPage = () => {
               />
             </div>
             
-            {/* Category Filter */}
             <select
               value={selectedCategory}
               onChange={(e) => setSelectedCategory(e.target.value)}
@@ -185,7 +176,6 @@ const ShopPage = () => {
               ))}
             </select>
             
-            {/* Filter Toggle Button */}
             <button
               onClick={() => setShowFilters(!showFilters)}
               className="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition flex items-center gap-2"
@@ -194,7 +184,6 @@ const ShopPage = () => {
               Filters
             </button>
             
-            {/* Clear Filters */}
             {(searchTerm || selectedCategory || priceRange.min || priceRange.max) && (
               <button
                 onClick={clearFilters}
@@ -205,7 +194,6 @@ const ShopPage = () => {
             )}
           </div>
           
-          {/* Price Range Filters */}
           {showFilters && (
             <div className="mt-4 pt-4 border-t border-gray-200">
               <div className="grid md:grid-cols-2 gap-4">
