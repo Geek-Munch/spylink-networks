@@ -66,18 +66,14 @@ const HomePage = () => {
               transition={{ duration: 0.8 }}
             >
               <motion.div 
-  animate={{ x: [0, 10, 0] }}
-  transition={{ duration: 3, repeat: Infinity }}
-  className="absolute -bottom-3 -left-3 sm:-bottom-6 sm:-left-6 glass-card rounded-xl p-2 sm:p-4"
->
-  <div className="flex items-center gap-2 sm:gap-3">
-    <Zap className="h-6 w-6 sm:h-8 sm:w-8 text-yellow-500" />
-    <div>
-      <p className="text-xl sm:text-2xl font-bold">1 Gbps</p>
-      <p className="text-xs sm:text-sm text-gray-500">Ultra Fast Speed</p>
-    </div>
-  </div>
-</motion.div>
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.2 }}
+                className="inline-flex items-center gap-2 bg-primary-100 text-primary-700 px-4 py-2 rounded-full mb-6"
+              >
+                <Sparkles className="h-5 w-5" />
+                <span className="text-sm font-semibold">Kenya's Fastest Growing ISP</span>
+              </motion.div>
               
               <h1 className="text-5xl lg:text-7xl font-bold leading-tight mb-6">
                 <span className="gradient-text">Lightning Fast</span>
@@ -102,7 +98,7 @@ const HomePage = () => {
               
               <div className="mt-12 flex gap-8">
                 <div>
-                  <p className="text-3xl font-bold text-primary-600">1K+</p>
+                  <p className="text-3xl font-bold text-primary-600">10K+</p>
                   <p className="text-gray-500">Happy Customers</p>
                 </div>
                 <div>
@@ -136,18 +132,18 @@ const HomePage = () => {
                   />
                 </div>
                 <motion.div 
-                  animate={{ x: [0, 10, 0] }}
-                  transition={{ duration: 3, repeat: Infinity }}
-                  className="absolute -bottom-6 -left-6 glass-card rounded-xl p-4"
-                >
-                  <div className="flex items-center gap-3">
-                    <Zap className="h-8 w-8 text-yellow-500" />
-                    <div>
-                      <p className="text-2xl font-bold">1 Gbps</p>
-                      <p className="text-sm text-gray-500">Ultra Fast Speed</p>
-                    </div>
-                  </div>
-                </motion.div>
+  animate={{ x: [0, 10, 0] }}
+  transition={{ duration: 3, repeat: Infinity }}
+  className="absolute -bottom-3 -left-3 sm:-bottom-6 sm:-left-6 glass-card rounded-xl p-2 sm:p-4"
+>
+  <div className="flex items-center gap-2 sm:gap-3">
+    <Zap className="h-6 w-6 sm:h-8 sm:w-8 text-yellow-500" />
+    <div>
+      <p className="text-xl sm:text-2xl font-bold">1 Gbps</p>
+      <p className="text-xs sm:text-sm text-gray-500">Ultra Fast Speed</p>
+    </div>
+  </div>
+</motion.div>
               </div>
             </motion.div>
           </div>
