@@ -1,4 +1,4 @@
-// API configuration
+// API Configuration
 export const API_URL = process.env.NODE_ENV === 'production' 
-  ? 'https://your-backend-domain.up.railway.app/api'  // Update after deployment
+  ? 'https://spylink-backend.onrender.com/api' 
   : 'http://127.0.0.1:8000/api';
