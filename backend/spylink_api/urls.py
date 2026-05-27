@@ -14,6 +14,10 @@ from accounts.views import (
 from core.views import contact_us
 from django.http import HttpResponse
 from django.core.management import call_command
+from django.http import JsonResponse
+
+def health_check(request):
+    return JsonResponse({"status": "ok", "message": "Spylink API is running!"})
 
 def run_migrations(request):
     try:
@@ -32,10 +36,10 @@ router.register(r'orders', OrderViewSet, basename='order')
 router.register(r'payments', PaymentViewSet, basename='payment')
 
 urlpatterns = [
+    path('', health_check), 
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
     path('run-migrations/', run_migrations),
-    path('', include('spylink_api.simple_urls')),
     
     # Auth endpoints
     path('api/auth/register/', RegisterView.as_view(), name='register'),
