@@ -98,7 +98,7 @@ const HomePage = () => {
               
               <div className="mt-12 flex gap-8">
                 <div>
-                  <p className="text-3xl font-bold text-primary-600">1K+</p>
+                  <p className="text-3xl font-bold text-primary-600">10K+</p>
                   <p className="text-gray-500">Happy Customers</p>
                 </div>
                 <div>
