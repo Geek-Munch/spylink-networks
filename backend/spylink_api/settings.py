@@ -12,7 +12,7 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=True, cast=bool)
 ALLOWED_HOSTS = config(
     'ALLOWED_HOSTS', 
-    default='localhost,127.0.0.1,spylink-backend.onrender.com,.vercel.app'
+    default='localhost,127.0.0.1,https://spylink-networks.onrender.com,.vercel.app'
 ).split(',')
 
 # Application definition
