@@ -10,12 +10,15 @@ import {
   LogOut,
   Settings,
   Bell,
-  Search
+  Search,
+  Shield
 } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const AdminDashboard = () => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -67,19 +70,39 @@ const AdminDashboard = () => {
 
   if (loading) {
     return (
-      <div className="flex justify-center items-center h-screen">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600"></div>
+      <div className="flex justify-center items-center h-screen bg-gradient-to-br from-gray-50 to-white">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600 mx-auto mb-4"></div>
+          <p className="text-gray-600">Loading admin panel...</p>
+        </div>
       </div>
     );
   }
 
   return (
-    <div className="flex h-screen bg-gray-100">
+    <div className="flex h-screen bg-gradient-to-br from-gray-50 to-white">
       {/* Sidebar */}
-      <aside className="w-64 bg-gray-900 text-white flex flex-col">
-        <div className="p-6 border-b border-gray-800">
-          <h1 className="text-2xl font-bold">Spylink Admin</h1>
-          <p className="text-sm text-gray-400 mt-1">Welcome, {user?.username}</p>
+      <motion.aside 
+        initial={{ x: -20, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        className={`${sidebarCollapsed ? 'w-20' : 'w-64'} bg-gradient-to-b from-gray-900 to-gray-800 text-white flex flex-col transition-all duration-300 shadow-xl`}
+      >
+        <div className={`p-6 border-b border-gray-700 ${sidebarCollapsed ? 'text-center' : ''}`}>
+          <div className="flex items-center gap-2 justify-between">
+            <div className={`flex items-center gap-2 ${sidebarCollapsed ? 'justify-center w-full' : ''}`}>
+              <Shield className="h-8 w-8 text-primary-400" />
+              {!sidebarCollapsed && <span className="text-xl font-bold">Admin Panel</span>}
+            </div>
+            <button 
+              onClick={() => setSidebarCollapsed(!sidebarCollapsed)}
+              className="text-gray-400 hover:text-white transition"
+            >
+              {sidebarCollapsed ? '→' : '←'}
+            </button>
+          </div>
+          {!sidebarCollapsed && (
+            <p className="text-xs text-gray-400 mt-2">Welcome back, {user?.username}</p>
+          )}
         </div>
         
         <nav className="flex-1 p-4 space-y-2">
@@ -93,29 +116,29 @@ const AdminDashboard = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`flex items-center gap-3 px-4 py-3 rounded-lg transition ${
+                className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-300 ${
                   isActive 
-                    ? 'bg-primary-600 text-white' 
-                    : 'text-gray-300 hover:bg-gray-800'
-                }`}
+                    ? 'bg-gradient-to-r from-primary-600 to-primary-700 text-white shadow-lg' 
+                    : 'text-gray-300 hover:bg-gray-700/50'
+                } ${sidebarCollapsed ? 'justify-center' : ''}`}
               >
                 <Icon className="h-5 w-5" />
-                <span>{item.label}</span>
+                {!sidebarCollapsed && <span>{item.label}</span>}
               </Link>
             );
           })}
         </nav>
         
-        <div className="p-4 border-t border-gray-800">
+        <div className="p-4 border-t border-gray-700">
           <button
             onClick={handleLogout}
-            className="flex items-center gap-3 px-4 py-3 w-full rounded-lg text-gray-300 hover:bg-gray-800 transition"
+            className={`flex items-center gap-3 px-4 py-3 w-full rounded-xl text-gray-300 hover:bg-gray-700/50 transition-all duration-300 ${sidebarCollapsed ? 'justify-center' : ''}`}
           >
             <LogOut className="h-5 w-5" />
-            <span>Logout</span>
+            {!sidebarCollapsed && <span>Logout</span>}
           </button>
         </div>
-      </aside>
+      </motion.aside>
       
       {/* Main Content */}
       <main className="flex-1 overflow-y-auto">
