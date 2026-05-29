@@ -37,7 +37,7 @@ const RegisterPage = () => {
     setLoading(true);
 
     try {
-      const response = await fetch('${API_URL}/products/', {
+      const response = await fetch('${API_URL}/register/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
