@@ -12,7 +12,7 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=True, cast=bool)
 ALLOWED_HOSTS = config(
     'ALLOWED_HOSTS', 
-    default='localhost,127.0.0.1,https://spylink-networks.onrender.com,.vercel.app'
+    default='localhost,127.0.0.1,.onrender.com,.vercel.app'
 ).split(',')
 
 # Application definition
@@ -152,7 +152,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
     "https://spylink-networks.vercel.app",  # Your Vercel frontend
-    "https://spylink-backend.onrender.com",
+    "https://spylink-networks.onrender.com",
 ]
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_METHODS = [
