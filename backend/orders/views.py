@@ -10,6 +10,12 @@ from payments.services import MpesaService
 from accounts.email_service import EmailService
 
 class OrderViewSet(viewsets.ModelViewSet):
+    """
+    ViewSet for Order model with CRUD operations.
+    - List, Retrieve, Create, Update, Delete orders
+    - Checkout process with M-Pesa payment
+    - Update order status (Admin only)
+    """
     serializer_class = OrderSerializer
     permission_classes = [permissions.IsAuthenticated]
     
@@ -18,9 +24,11 @@ class OrderViewSet(viewsets.ModelViewSet):
     
     @action(detail=False, methods=['post'])
     def checkout(self, request):
+        """
+        Process checkout and initiate M-Pesa payment
+        """
         serializer = CheckoutSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
-        EmailService.send_order_confirmation(order, request.user)
         
         items_data = serializer.validated_data['items']
         shipping_address = serializer.validated_data['shipping_address']
@@ -82,13 +90,19 @@ class OrderViewSet(viewsets.ModelViewSet):
                 phone_number=phone_number
             )
             
+            # Send order confirmation email
+            try:
+                EmailService.send_order_confirmation(order, request.user)
+            except Exception as e:
+                print(f"Email error: {e}")
+            
             # Initiate M-Pesa payment
             mpesa_service = MpesaService()
             response = mpesa_service.initiate_stk_push(
                 phone_number=phone_number,
                 amount=float(order.total_amount),
                 account_reference=f"ORD-{order.id}",
-                transaction_desc="SPYLINK NETWORKS"
+                transaction_desc="SPYLINK"
             )
             
             if response and response.get('ResponseCode') == '0':
@@ -108,3 +122,32 @@ class OrderViewSet(viewsets.ModelViewSet):
                 return Response({
                     "error": "Failed to initiate payment. Please try again."
                 }, status=status.HTTP_400_BAD_REQUEST)
+    
+    @action(detail=True, methods=['patch'])
+    def update_status(self, request, pk=None):
+        """
+        Update order status (Admin only)
+        """
+        order = self.get_object()
+        new_status = request.data.get('status')
+        
+        if not new_status:
+            return Response(
+                {'error': 'Status is required'}, 
+                status=status.HTTP_400_BAD_REQUEST
+            )
+        
+        valid_statuses = ['PENDING', 'PROCESSING', 'SHIPPED', 'DELIVERED', 'CANCELLED']
+        if new_status not in valid_statuses:
+            return Response(
+                {'error': f'Invalid status. Must be one of: {valid_statuses}'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+        
+        order.status = new_status
+        order.save()
+        
+        return Response({
+            'status': order.status,
+            'message': f'Order {order.order_number} status updated to {new_status}'
+        })

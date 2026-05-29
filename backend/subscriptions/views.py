@@ -10,6 +10,14 @@ from payments.models import Payment
 from payments.services import MpesaService
 
 class SubscriptionViewSet(viewsets.ModelViewSet):
+    """
+    ViewSet for Subscription model with CRUD operations.
+    - List, Retrieve, Create, Update, Delete subscriptions
+    - Subscribe to internet package with M-Pesa payment
+    - Cancel subscription
+    - Confirm installation (Admin only)
+    - Update subscription status (Admin only)
+    """
     serializer_class = SubscriptionSerializer
     permission_classes = [permissions.IsAuthenticated]
     
@@ -18,6 +26,9 @@ class SubscriptionViewSet(viewsets.ModelViewSet):
     
     @action(detail=False, methods=['post'])
     def subscribe(self, request):
+        """
+        Subscribe to an internet package with installation fee
+        """
         serializer = SubscribeSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         
@@ -31,17 +42,14 @@ class SubscriptionViewSet(viewsets.ModelViewSet):
         except InternetPackage.DoesNotExist:
             return Response({"error": "Package not found"}, status=status.HTTP_404_NOT_FOUND)
         
-        # Calculate total amount (package price + installation fee if not already paid)
-        total_amount = package.price
-        if not package.first_month_free:
-            total_amount += package.price  # First month not free
-        # Installation fee will be collected separately or added to first bill
+        # Calculate total amount (package price + installation fee)
+        total_due = package.price + package.installation_fee
         
         with transaction.atomic():
             subscription = Subscription.objects.create(
                 user=request.user,
                 package=package,
-                amount_paid=total_amount,
+                amount_paid=total_due,
                 auto_renew=auto_renew,
                 first_month_free=package.first_month_free,
                 installation_fee_paid=False
@@ -50,9 +58,6 @@ class SubscriptionViewSet(viewsets.ModelViewSet):
             # Schedule installation if date provided
             if installation_date:
                 subscription.schedule_installation(installation_date)
-            
-            # Calculate total payment due (including installation fee)
-            total_due = package.price + package.installation_fee
             
             payment = Payment.objects.create(
                 user=request.user,
@@ -97,6 +102,9 @@ class SubscriptionViewSet(viewsets.ModelViewSet):
     
     @action(detail=True, methods=['post'])
     def cancel(self, request, pk=None):
+        """
+        Cancel an active subscription
+        """
         subscription = self.get_object()
         
         if subscription.status == Subscription.SubscriptionStatus.ACTIVE:
@@ -116,7 +124,9 @@ class SubscriptionViewSet(viewsets.ModelViewSet):
     
     @action(detail=True, methods=['post'])
     def confirm_installation(self, request, pk=None):
-        """Admin endpoint to confirm installation completion"""
+        """
+        Confirm installation completion (Admin only)
+        """
         subscription = self.get_object()
         
         if subscription.status == Subscription.SubscriptionStatus.INSTALLATION:
@@ -131,6 +141,9 @@ class SubscriptionViewSet(viewsets.ModelViewSet):
     
     @action(detail=True, methods=['get'])
     def status(self, request, pk=None):
+        """
+        Get subscription status details
+        """
         subscription = self.get_object()
         return Response({
             "is_active": subscription.is_active(),
@@ -141,4 +154,33 @@ class SubscriptionViewSet(viewsets.ModelViewSet):
             "installation_fee_paid": subscription.installation_fee_paid,
             "first_month_free": subscription.first_month_free,
             "free_month_used": subscription.free_month_used
+        })
+    
+    @action(detail=True, methods=['patch'])
+    def update_status(self, request, pk=None):
+        """
+        Update subscription status (Admin only)
+        """
+        subscription = self.get_object()
+        new_status = request.data.get('status')
+        
+        if not new_status:
+            return Response(
+                {'error': 'Status is required'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+        
+        valid_statuses = ['PENDING', 'ACTIVE', 'INSTALLATION', 'EXPIRED', 'CANCELLED']
+        if new_status not in valid_statuses:
+            return Response(
+                {'error': f'Invalid status. Must be one of: {valid_statuses}'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+        
+        subscription.status = new_status
+        subscription.save()
+        
+        return Response({
+            'status': subscription.status,
+            'message': f'Subscription status updated to {new_status}'
         })
