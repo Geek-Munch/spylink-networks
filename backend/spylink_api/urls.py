@@ -1,4 +1,3 @@
-from django.contrib import admin
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from packages.views import PackageViewSet
@@ -15,6 +14,7 @@ from core.views import contact_us
 from django.http import HttpResponse
 from django.core.management import call_command
 from django.http import JsonResponse
+from core.admin import admin_site
 import traceback
 
 def health_check(request):
@@ -54,7 +54,7 @@ urlpatterns = [
     path('run-migrations/', run_migrations),
     path('migrate/', run_migrations), 
     path('', health_check), 
-    path('admin/', admin.site.urls),
+    path('admin/', admin_site.urls),
     path('load-fixtures/', load_fixtures),
    # path('clear-users/', clear_users),
     
