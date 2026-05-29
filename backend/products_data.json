@@ -1,0 +1,6112 @@
+[
+{
+  "model": "products.product",
+  "pk": 1,
+  "fields": {
+    "name": "TP-Link Archer AX50",
+    "slug": "tp-link-archer-ax50",
+    "category": 1,
+    "description": "Next-gen Wi-Fi 6 router with speeds up to 2.4 Gbps",
+    "price": "8999.00",
+    "stock": 15,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [
+      "https://example.com/image1.jpg",
+      "https://example.com/image2.jpg",
+      "https://example.com/image3.jpg"
+    ],
+    "specifications": {
+      "ports": "4 Gigabit",
+      "range": "Large home",
+      "wifi_standard": "WiFi 6"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-22T05:43:58.146Z",
+    "updated_at": "2026-05-24T16:51:27.823Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 2,
+  "fields": {
+    "name": "VGA Cable 1.5m M/M",
+    "slug": "vga-cable-15m-m-m",
+    "category": 3,
+    "description": "VGA Cable 1.5m M/M - Professional grade product from Spylink Networks",
+    "price": "75.00",
+    "stock": 100,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "VGA",
+      "length": "1.5m",
+      "connector": "Male to Male"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.171Z",
+    "updated_at": "2026-05-24T16:51:27.822Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 3,
+  "fields": {
+    "name": "VGA Cable 3m M/M",
+    "slug": "vga-cable-3m-m-m",
+    "category": 3,
+    "description": "VGA Cable 3m M/M - Professional grade product from Spylink Networks",
+    "price": "130.00",
+    "stock": 100,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "VGA",
+      "length": "3m",
+      "connector": "Male to Male"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.185Z",
+    "updated_at": "2026-05-24T16:51:27.821Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 4,
+  "fields": {
+    "name": "VGA Cable 5m M/M",
+    "slug": "vga-cable-5m-m-m",
+    "category": 3,
+    "description": "VGA Cable 5m M/M - Professional grade product from Spylink Networks",
+    "price": "280.00",
+    "stock": 80,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "VGA",
+      "length": "5m",
+      "connector": "Male to Male"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.188Z",
+    "updated_at": "2026-05-24T16:51:27.820Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 5,
+  "fields": {
+    "name": "VGA Cable 10m M/M",
+    "slug": "vga-cable-10m-m-m",
+    "category": 3,
+    "description": "VGA Cable 10m M/M - Professional grade product from Spylink Networks",
+    "price": "420.00",
+    "stock": 60,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "VGA",
+      "length": "10m",
+      "connector": "Male to Male"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.190Z",
+    "updated_at": "2026-05-24T16:51:27.819Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 6,
+  "fields": {
+    "name": "VGA Cable 20m M/M",
+    "slug": "vga-cable-20m-m-m",
+    "category": 3,
+    "description": "VGA Cable 20m M/M - Professional grade product from Spylink Networks",
+    "price": "800.00",
+    "stock": 30,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "VGA",
+      "length": "20m",
+      "connector": "Male to Male"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.196Z",
+    "updated_at": "2026-05-24T16:51:27.818Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 7,
+  "fields": {
+    "name": "VGA Cable 25m M/M",
+    "slug": "vga-cable-25m-m-m",
+    "category": 3,
+    "description": "VGA Cable 25m M/M - Professional grade product from Spylink Networks",
+    "price": "1000.00",
+    "stock": 20,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "VGA",
+      "length": "25m",
+      "connector": "Male to Male"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.199Z",
+    "updated_at": "2026-05-24T16:51:27.817Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 8,
+  "fields": {
+    "name": "VGA Cable 30m M/M",
+    "slug": "vga-cable-30m-m-m",
+    "category": 3,
+    "description": "VGA Cable 30m M/M - Professional grade product from Spylink Networks",
+    "price": "1200.00",
+    "stock": 15,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "VGA",
+      "length": "30m",
+      "connector": "Male to Male"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.202Z",
+    "updated_at": "2026-05-24T16:51:27.816Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 9,
+  "fields": {
+    "name": "HDMI to HDMI Cable 1.5m",
+    "slug": "hdmi-to-hdmi-cable-15m",
+    "category": 3,
+    "description": "HDMI to HDMI Cable 1.5m - Professional grade product from Spylink Networks",
+    "price": "80.00",
+    "stock": 200,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "HDMI",
+      "length": "1.5m",
+      "version": "1.4"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.204Z",
+    "updated_at": "2026-05-24T16:51:27.815Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 10,
+  "fields": {
+    "name": "HDMI to HDMI Cable 3m",
+    "slug": "hdmi-to-hdmi-cable-3m",
+    "category": 3,
+    "description": "HDMI to HDMI Cable 3m - Professional grade product from Spylink Networks",
+    "price": "160.00",
+    "stock": 150,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "HDMI",
+      "length": "3m",
+      "version": "1.4"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.208Z",
+    "updated_at": "2026-05-24T16:51:27.814Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 11,
+  "fields": {
+    "name": "HDMI to HDMI Cable 5m",
+    "slug": "hdmi-to-hdmi-cable-5m",
+    "category": 3,
+    "description": "HDMI to HDMI Cable 5m - Professional grade product from Spylink Networks",
+    "price": "270.00",
+    "stock": 120,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "HDMI",
+      "length": "5m",
+      "version": "1.4"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.212Z",
+    "updated_at": "2026-05-24T16:51:27.813Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 12,
+  "fields": {
+    "name": "HOMI to DVI Cable 1.5m",
+    "slug": "homi-to-dvi-cable-15m",
+    "category": 3,
+    "description": "HOMI to DVI Cable 1.5m - Professional grade product from Spylink Networks",
+    "price": "180.00",
+    "stock": 50,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "HDMI to DVI",
+      "length": "1.5m"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.214Z",
+    "updated_at": "2026-05-24T16:51:27.812Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 13,
+  "fields": {
+    "name": "USB Printer Cable 1.5m",
+    "slug": "usb-printer-cable-15m",
+    "category": 3,
+    "description": "USB Printer Cable 1.5m - Professional grade product from Spylink Networks",
+    "price": "70.00",
+    "stock": 150,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "use": "Printer",
+      "type": "USB",
+      "length": "1.5m"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.217Z",
+    "updated_at": "2026-05-24T16:51:27.811Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 14,
+  "fields": {
+    "name": "USB Printer Cable 3m",
+    "slug": "usb-printer-cable-3m",
+    "category": 3,
+    "description": "USB Printer Cable 3m - Professional grade product from Spylink Networks",
+    "price": "150.00",
+    "stock": 100,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "use": "Printer",
+      "type": "USB",
+      "length": "3m"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.220Z",
+    "updated_at": "2026-05-24T16:51:27.810Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 15,
+  "fields": {
+    "name": "USB Printer Cable 5m",
+    "slug": "usb-printer-cable-5m",
+    "category": 3,
+    "description": "USB Printer Cable 5m - Professional grade product from Spylink Networks",
+    "price": "250.00",
+    "stock": 80,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "use": "Printer",
+      "type": "USB",
+      "length": "5m"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.222Z",
+    "updated_at": "2026-05-24T16:51:27.809Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 16,
+  "fields": {
+    "name": "USB Printer Cable 10m",
+    "slug": "usb-printer-cable-10m",
+    "category": 3,
+    "description": "USB Printer Cable 10m - Professional grade product from Spylink Networks",
+    "price": "400.00",
+    "stock": 50,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "use": "Printer",
+      "type": "USB",
+      "length": "10m"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.225Z",
+    "updated_at": "2026-05-24T16:51:27.807Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 17,
+  "fields": {
+    "name": "USB Extension Cable 1.5m",
+    "slug": "usb-extension-cable-15m",
+    "category": 3,
+    "description": "USB Extension Cable 1.5m - Professional grade product from Spylink Networks",
+    "price": "70.00",
+    "stock": 120,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "USB Extension",
+      "length": "1.5m",
+      "version": "2.0"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.228Z",
+    "updated_at": "2026-05-24T16:51:27.806Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 18,
+  "fields": {
+    "name": "USB Extension Cable 3m",
+    "slug": "usb-extension-cable-3m",
+    "category": 3,
+    "description": "USB Extension Cable 3m - Professional grade product from Spylink Networks",
+    "price": "150.00",
+    "stock": 100,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "USB Extension",
+      "length": "3m",
+      "version": "2.0"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.231Z",
+    "updated_at": "2026-05-24T16:51:27.805Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 19,
+  "fields": {
+    "name": "USB Extension Cable 5m",
+    "slug": "usb-extension-cable-5m",
+    "category": 3,
+    "description": "USB Extension Cable 5m - Professional grade product from Spylink Networks",
+    "price": "250.00",
+    "stock": 80,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "USB Extension",
+      "length": "5m",
+      "version": "2.0"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.233Z",
+    "updated_at": "2026-05-24T16:51:27.804Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 20,
+  "fields": {
+    "name": "USB Extension Cable 10m Heavy",
+    "slug": "usb-extension-cable-10m-heavy",
+    "category": 3,
+    "description": "USB Extension Cable 10m Heavy - Professional grade product from Spylink Networks",
+    "price": "550.00",
+    "stock": 40,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "USB Extension",
+      "length": "10m",
+      "heavy_duty": true
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.235Z",
+    "updated_at": "2026-05-24T16:51:27.803Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 21,
+  "fields": {
+    "name": "USB to USB Cable A to A 1.2m",
+    "slug": "usb-to-usb-cable-a-to-a-12m",
+    "category": 3,
+    "description": "USB to USB Cable A to A 1.2m - Professional grade product from Spylink Networks",
+    "price": "60.00",
+    "stock": 100,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "USB A to A",
+      "length": "1.2m"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.238Z",
+    "updated_at": "2026-05-24T16:51:27.802Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 22,
+  "fields": {
+    "name": "Cat6 Cable 305m Indoor PASS Fluke",
+    "slug": "cat6-cable-305m-indoor-pass-fluke",
+    "category": 3,
+    "description": "Cat6 Cable 305m Indoor PASS Fluke - Professional grade product from Spylink Networks",
+    "price": "7500.00",
+    "stock": 20,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Cat6",
+      "length": "305m",
+      "tested": "Fluke PASS"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.240Z",
+    "updated_at": "2026-05-24T16:51:27.801Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 23,
+  "fields": {
+    "name": "Cat6 Cable 305m Indoor Full Copper",
+    "slug": "cat6-cable-305m-indoor-full-copper",
+    "category": 3,
+    "description": "Cat6 Cable 305m Indoor Full Copper - Professional grade product from Spylink Networks",
+    "price": "10500.00",
+    "stock": 15,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Cat6",
+      "length": "305m",
+      "material": "Full Copper"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.243Z",
+    "updated_at": "2026-05-24T16:51:27.800Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 24,
+  "fields": {
+    "name": "Cat6 Cable 305m Outdoor",
+    "slug": "cat6-cable-305m-outdoor",
+    "category": 3,
+    "description": "Cat6 Cable 305m Outdoor - Professional grade product from Spylink Networks",
+    "price": "5600.00",
+    "stock": 25,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Cat6",
+      "usage": "Outdoor",
+      "length": "305m"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.246Z",
+    "updated_at": "2026-05-24T16:51:27.799Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 25,
+  "fields": {
+    "name": "Patch Code Cat7 0.5m Black",
+    "slug": "patch-code-cat7-05m-black",
+    "category": 3,
+    "description": "Patch Code Cat7 0.5m Black - Professional grade product from Spylink Networks",
+    "price": "120.00",
+    "stock": 100,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Cat7",
+      "color": "Black",
+      "length": "0.5m"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.248Z",
+    "updated_at": "2026-05-24T16:51:27.798Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 26,
+  "fields": {
+    "name": "Patch Code Cat7 1.5m Black",
+    "slug": "patch-code-cat7-15m-black",
+    "category": 3,
+    "description": "Patch Code Cat7 1.5m Black - Professional grade product from Spylink Networks",
+    "price": "350.00",
+    "stock": 80,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Cat7",
+      "color": "Black",
+      "length": "1.5m"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.251Z",
+    "updated_at": "2026-05-24T16:51:27.796Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 27,
+  "fields": {
+    "name": "Patch Code Cat6 1m Grey",
+    "slug": "patch-code-cat6-1m-grey",
+    "category": 3,
+    "description": "Patch Code Cat6 1m Grey - Professional grade product from Spylink Networks",
+    "price": "75.00",
+    "stock": 150,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Cat6",
+      "color": "Grey",
+      "length": "1m"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.253Z",
+    "updated_at": "2026-05-24T16:51:27.795Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 28,
+  "fields": {
+    "name": "Patch Code Cat6 2m Grey",
+    "slug": "patch-code-cat6-2m-grey",
+    "category": 3,
+    "description": "Patch Code Cat6 2m Grey - Professional grade product from Spylink Networks",
+    "price": "85.00",
+    "stock": 150,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Cat6",
+      "color": "Grey",
+      "length": "2m"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.256Z",
+    "updated_at": "2026-05-24T16:51:27.794Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 29,
+  "fields": {
+    "name": "Patch Code Cat6 3m Grey",
+    "slug": "patch-code-cat6-3m-grey",
+    "category": 3,
+    "description": "Patch Code Cat6 3m Grey - Professional grade product from Spylink Networks",
+    "price": "100.00",
+    "stock": 140,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Cat6",
+      "color": "Grey",
+      "length": "3m"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.259Z",
+    "updated_at": "2026-05-24T16:51:27.793Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 30,
+  "fields": {
+    "name": "Patch Code Cat6 5m Grey",
+    "slug": "patch-code-cat6-5m-grey",
+    "category": 3,
+    "description": "Patch Code Cat6 5m Grey - Professional grade product from Spylink Networks",
+    "price": "130.00",
+    "stock": 120,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Cat6",
+      "color": "Grey",
+      "length": "5m"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.261Z",
+    "updated_at": "2026-05-24T16:51:27.792Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 31,
+  "fields": {
+    "name": "Patch Code Cat6 10m Grey",
+    "slug": "patch-code-cat6-10m-grey",
+    "category": 3,
+    "description": "Patch Code Cat6 10m Grey - Professional grade product from Spylink Networks",
+    "price": "230.00",
+    "stock": 100,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Cat6",
+      "color": "Grey",
+      "length": "10m"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.263Z",
+    "updated_at": "2026-05-24T16:51:27.791Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 32,
+  "fields": {
+    "name": "Patch Code Cat6 15m Grey",
+    "slug": "patch-code-cat6-15m-grey",
+    "category": 3,
+    "description": "Patch Code Cat6 15m Grey - Professional grade product from Spylink Networks",
+    "price": "300.00",
+    "stock": 80,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Cat6",
+      "color": "Grey",
+      "length": "15m"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.269Z",
+    "updated_at": "2026-05-24T16:51:27.789Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 33,
+  "fields": {
+    "name": "Patch Code Cat6 20m Grey",
+    "slug": "patch-code-cat6-20m-grey",
+    "category": 3,
+    "description": "Patch Code Cat6 20m Grey - Professional grade product from Spylink Networks",
+    "price": "400.00",
+    "stock": 60,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Cat6",
+      "color": "Grey",
+      "length": "20m"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.272Z",
+    "updated_at": "2026-05-24T16:51:27.788Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 34,
+  "fields": {
+    "name": "Patch Code Cat6 30m Grey",
+    "slug": "patch-code-cat6-30m-grey",
+    "category": 3,
+    "description": "Patch Code Cat6 30m Grey - Professional grade product from Spylink Networks",
+    "price": "500.00",
+    "stock": 50,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Cat6",
+      "color": "Grey",
+      "length": "30m"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.275Z",
+    "updated_at": "2026-05-24T16:51:27.787Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 35,
+  "fields": {
+    "name": "Patch Code Cat6 40m Grey",
+    "slug": "patch-code-cat6-40m-grey",
+    "category": 3,
+    "description": "Patch Code Cat6 40m Grey - Professional grade product from Spylink Networks",
+    "price": "600.00",
+    "stock": 40,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Cat6",
+      "color": "Grey",
+      "length": "40m"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.279Z",
+    "updated_at": "2026-05-24T16:51:27.786Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 36,
+  "fields": {
+    "name": "Patch Code Cat6 50m Grey",
+    "slug": "patch-code-cat6-50m-grey",
+    "category": 3,
+    "description": "Patch Code Cat6 50m Grey - Professional grade product from Spylink Networks",
+    "price": "700.00",
+    "stock": 30,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Cat6",
+      "color": "Grey",
+      "length": "50m"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.281Z",
+    "updated_at": "2026-05-24T16:51:27.785Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 37,
+  "fields": {
+    "name": "Crimping Tool Heavy (Blue)",
+    "slug": "crimping-tool-heavy-(blue)",
+    "category": 4,
+    "description": "Crimping Tool Heavy (Blue) - Professional grade product from Spylink Networks",
+    "price": "900.00",
+    "stock": 50,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Crimping Tool",
+      "color": "Blue",
+      "quality": "Heavy Duty"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.284Z",
+    "updated_at": "2026-05-24T16:51:27.784Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 38,
+  "fields": {
+    "name": "Crimping Tool Jakemy Original JM-CT4-3",
+    "slug": "crimping-tool-jakemy-original-jm-ct4-3",
+    "category": 4,
+    "description": "Crimping Tool Jakemy Original JM-CT4-3 - Professional grade product from Spylink Networks",
+    "price": "500.00",
+    "stock": 40,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Crimping Tool",
+      "brand": "Jakemy",
+      "model": "JM-CT4-3"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.286Z",
+    "updated_at": "2026-05-24T16:51:27.783Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 39,
+  "fields": {
+    "name": "Crimping Tool Good Quality (568)",
+    "slug": "crimping-tool-good-quality-(568)",
+    "category": 4,
+    "description": "Crimping Tool Good Quality (568) - Professional grade product from Spylink Networks",
+    "price": "450.00",
+    "stock": 60,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Crimping Tool",
+      "model": "568"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.288Z",
+    "updated_at": "2026-05-24T16:51:27.782Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 40,
+  "fields": {
+    "name": "Crimping Tool Yellow",
+    "slug": "crimping-tool-yellow",
+    "category": 4,
+    "description": "Crimping Tool Yellow - Professional grade product from Spylink Networks",
+    "price": "550.00",
+    "stock": 45,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Crimping Tool",
+      "color": "Yellow"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.291Z",
+    "updated_at": "2026-05-24T16:51:27.781Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 41,
+  "fields": {
+    "name": "LAN Tester Plug and Play",
+    "slug": "lan-tester-plug-and-play",
+    "category": 4,
+    "description": "LAN Tester Plug and Play - Professional grade product from Spylink Networks",
+    "price": "450.00",
+    "stock": 35,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Cable Tester",
+      "feature": "Plug and Play"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.295Z",
+    "updated_at": "2026-05-24T16:51:27.780Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 42,
+  "fields": {
+    "name": "LAN Tester Middle Quality",
+    "slug": "lan-tester-middle-quality",
+    "category": 4,
+    "description": "LAN Tester Middle Quality - Professional grade product from Spylink Networks",
+    "price": "400.00",
+    "stock": 40,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Cable Tester"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.297Z",
+    "updated_at": "2026-05-24T16:51:27.779Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 43,
+  "fields": {
+    "name": "LAN Tester S in 3 Good Quality",
+    "slug": "lan-tester-s-in-3-good-quality",
+    "category": 4,
+    "description": "LAN Tester S in 3 Good Quality - Professional grade product from Spylink Networks",
+    "price": "2000.00",
+    "stock": 20,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Cable Tester",
+      "quality": "Professional"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.299Z",
+    "updated_at": "2026-05-24T16:51:27.778Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 44,
+  "fields": {
+    "name": "Wire Tracker AR-868",
+    "slug": "wire-tracker-ar-868",
+    "category": 3,
+    "description": "Wire Tracker AR-868 - Professional grade product from Spylink Networks",
+    "price": "2000.00",
+    "stock": 15,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Wire Tracker",
+      "model": "AR-868"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.302Z",
+    "updated_at": "2026-05-24T16:51:27.777Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 45,
+  "fields": {
+    "name": "Punching Tool",
+    "slug": "punching-tool",
+    "category": 4,
+    "description": "Punching Tool - Professional grade product from Spylink Networks",
+    "price": "3000.00",
+    "stock": 10,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Punch Down Tool",
+      "quality": "Professional"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.304Z",
+    "updated_at": "2026-05-24T16:51:27.776Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 46,
+  "fields": {
+    "name": "Networking Tool Kit Yellow",
+    "slug": "networking-tool-kit-yellow",
+    "category": 4,
+    "description": "Networking Tool Kit Yellow - Professional grade product from Spylink Networks",
+    "price": "1500.00",
+    "stock": 20,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Tool Kit",
+      "color": "Yellow"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.307Z",
+    "updated_at": "2026-05-24T16:51:27.774Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 47,
+  "fields": {
+    "name": "Networking Tool Kit Green",
+    "slug": "networking-tool-kit-green",
+    "category": 4,
+    "description": "Networking Tool Kit Green - Professional grade product from Spylink Networks",
+    "price": "1500.00",
+    "stock": 20,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Tool Kit",
+      "color": "Green"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.311Z",
+    "updated_at": "2026-05-24T16:51:27.773Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 48,
+  "fields": {
+    "name": "CTV and Networking Tool Kit",
+    "slug": "ctv-and-networking-tool-kit",
+    "category": 4,
+    "description": "CTV and Networking Tool Kit - Professional grade product from Spylink Networks",
+    "price": "2800.00",
+    "stock": 15,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "use": "CCTV & Network",
+      "type": "Tool Kit"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.313Z",
+    "updated_at": "2026-05-24T16:51:27.772Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 49,
+  "fields": {
+    "name": "Laptop Tool Kit Jeckly-P12",
+    "slug": "laptop-tool-kit-jeckly-p12",
+    "category": 4,
+    "description": "Laptop Tool Kit Jeckly-P12 - Professional grade product from Spylink Networks",
+    "price": "3800.00",
+    "stock": 10,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Tool Kit",
+      "brand": "Jeckly",
+      "model": "P12"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.315Z",
+    "updated_at": "2026-05-24T16:51:27.771Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 50,
+  "fields": {
+    "name": "Cat6 RJ45 Connector",
+    "slug": "cat6-rj45-connector",
+    "category": 3,
+    "description": "Cat6 RJ45 Connector - Professional grade product from Spylink Networks",
+    "price": "2.50",
+    "stock": 5000,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "RJ45",
+      "standard": "Cat6"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.318Z",
+    "updated_at": "2026-05-24T16:51:27.770Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 51,
+  "fields": {
+    "name": "Cat6 RJ45 Stefl Connector",
+    "slug": "cat6-rj45-stefl-connector",
+    "category": 3,
+    "description": "Cat6 RJ45 Stefl Connector - Professional grade product from Spylink Networks",
+    "price": "4.00",
+    "stock": 3000,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "RJ45",
+      "feature": "Stefl",
+      "standard": "Cat6"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.323Z",
+    "updated_at": "2026-05-24T16:51:27.769Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 52,
+  "fields": {
+    "name": "Cat7 RJ45 Connector",
+    "slug": "cat7-rj45-connector",
+    "category": 3,
+    "description": "Cat7 RJ45 Connector - Professional grade product from Spylink Networks",
+    "price": "30.00",
+    "stock": 1000,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "RJ45",
+      "standard": "Cat7"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.327Z",
+    "updated_at": "2026-05-24T16:51:27.768Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 53,
+  "fields": {
+    "name": "RJ45 Cap Boot Gray Color",
+    "slug": "rj45-cap-boot-gray-color",
+    "category": 3,
+    "description": "RJ45 Cap Boot Gray Color - Professional grade product from Spylink Networks",
+    "price": "1.00",
+    "stock": 2000,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "RJ45 Boot",
+      "color": "Gray"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.330Z",
+    "updated_at": "2026-05-24T16:51:27.766Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 54,
+  "fields": {
+    "name": "Coupler 1+1",
+    "slug": "coupler-1+1",
+    "category": 3,
+    "description": "Coupler 1+1 - Professional grade product from Spylink Networks",
+    "price": "25.00",
+    "stock": 500,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "RJ45 Coupler",
+      "ports": "1+1"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.332Z",
+    "updated_at": "2026-05-24T16:51:27.765Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 55,
+  "fields": {
+    "name": "Coupler 1+2",
+    "slug": "coupler-1+2",
+    "category": 3,
+    "description": "Coupler 1+2 - Professional grade product from Spylink Networks",
+    "price": "30.00",
+    "stock": 400,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "RJ45 Coupler",
+      "ports": "1+2"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.334Z",
+    "updated_at": "2026-05-24T16:51:27.764Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 56,
+  "fields": {
+    "name": "Coupler 3+1 Black Good Quality",
+    "slug": "coupler-3+1-black-good-quality",
+    "category": 3,
+    "description": "Coupler 3+1 Black Good Quality - Professional grade product from Spylink Networks",
+    "price": "70.00",
+    "stock": 300,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "RJ45 Coupler",
+      "color": "Black",
+      "ports": "3+1"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.336Z",
+    "updated_at": "2026-05-24T16:51:27.763Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 57,
+  "fields": {
+    "name": "Cat6 ID Module",
+    "slug": "cat6-id-module",
+    "category": 3,
+    "description": "Cat6 ID Module - Professional grade product from Spylink Networks",
+    "price": "80.00",
+    "stock": 200,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Keystone Jack",
+      "standard": "Cat6"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.339Z",
+    "updated_at": "2026-05-24T16:51:27.762Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 58,
+  "fields": {
+    "name": "Faceplate Single for Cat6",
+    "slug": "faceplate-single-for-cat6",
+    "category": 3,
+    "description": "Faceplate Single for Cat6 - Professional grade product from Spylink Networks",
+    "price": "65.00",
+    "stock": 150,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Faceplate",
+      "ports": "1"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.342Z",
+    "updated_at": "2026-05-24T16:51:27.761Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 59,
+  "fields": {
+    "name": "Faceplate Double for Cat6",
+    "slug": "faceplate-double-for-cat6",
+    "category": 3,
+    "description": "Faceplate Double for Cat6 - Professional grade product from Spylink Networks",
+    "price": "65.00",
+    "stock": 150,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Faceplate",
+      "ports": "2"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.345Z",
+    "updated_at": "2026-05-24T16:51:27.759Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 60,
+  "fields": {
+    "name": "Patch Panel 24 Port",
+    "slug": "patch-panel-24-port",
+    "category": 3,
+    "description": "Patch Panel 24 Port - Professional grade product from Spylink Networks",
+    "price": "1800.00",
+    "stock": 30,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Patch Panel",
+      "ports": "24"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.347Z",
+    "updated_at": "2026-05-24T16:51:27.758Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 61,
+  "fields": {
+    "name": "Patch Panel 48 Port",
+    "slug": "patch-panel-48-port",
+    "category": 3,
+    "description": "Patch Panel 48 Port - Professional grade product from Spylink Networks",
+    "price": "3500.00",
+    "stock": 20,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Patch Panel",
+      "ports": "48"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.350Z",
+    "updated_at": "2026-05-24T16:51:27.757Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 62,
+  "fields": {
+    "name": "Cable Manager 1U",
+    "slug": "cable-manager-1u",
+    "category": 3,
+    "description": "Cable Manager 1U - Professional grade product from Spylink Networks",
+    "price": "550.00",
+    "stock": 40,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "size": "1U",
+      "type": "Cable Manager"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.352Z",
+    "updated_at": "2026-05-24T16:51:27.756Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 63,
+  "fields": {
+    "name": "Cable Manager 2U Plastic",
+    "slug": "cable-manager-2u-plastic",
+    "category": 3,
+    "description": "Cable Manager 2U Plastic - Professional grade product from Spylink Networks",
+    "price": "500.00",
+    "stock": 35,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "size": "2U",
+      "type": "Cable Manager",
+      "material": "Plastic"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.354Z",
+    "updated_at": "2026-05-24T16:51:27.755Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 64,
+  "fields": {
+    "name": "Cable Manager 2U Heavy Quality",
+    "slug": "cable-manager-2u-heavy-quality",
+    "category": 3,
+    "description": "Cable Manager 2U Heavy Quality - Professional grade product from Spylink Networks",
+    "price": "1000.00",
+    "stock": 25,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "size": "2U",
+      "type": "Cable Manager",
+      "material": "Metal"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.357Z",
+    "updated_at": "2026-05-24T16:51:27.754Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 65,
+  "fields": {
+    "name": "Power Adapter 12V 1A",
+    "slug": "power-adapter-12v-1a",
+    "category": 6,
+    "description": "Power Adapter 12V 1A - Professional grade product from Spylink Networks",
+    "price": "160.00",
+    "stock": 100,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "current": "1A",
+      "voltage": "12V"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.360Z",
+    "updated_at": "2026-05-24T16:51:27.753Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 66,
+  "fields": {
+    "name": "Power Adapter 12V 2A",
+    "slug": "power-adapter-12v-2a",
+    "category": 6,
+    "description": "Power Adapter 12V 2A - Professional grade product from Spylink Networks",
+    "price": "200.00",
+    "stock": 100,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "current": "2A",
+      "voltage": "12V"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.363Z",
+    "updated_at": "2026-05-24T16:51:27.752Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 67,
+  "fields": {
+    "name": "Power Adapter 12V 3A",
+    "slug": "power-adapter-12v-3a",
+    "category": 6,
+    "description": "Power Adapter 12V 3A - Professional grade product from Spylink Networks",
+    "price": "300.00",
+    "stock": 80,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "current": "3A",
+      "voltage": "12V"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.365Z",
+    "updated_at": "2026-05-24T16:51:27.751Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 68,
+  "fields": {
+    "name": "Power Adapter 12V 5A",
+    "slug": "power-adapter-12v-5a",
+    "category": 6,
+    "description": "Power Adapter 12V 5A - Professional grade product from Spylink Networks",
+    "price": "400.00",
+    "stock": 70,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "current": "5A",
+      "voltage": "12V"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.368Z",
+    "updated_at": "2026-05-24T16:51:27.750Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 69,
+  "fields": {
+    "name": "POE Adapter 48V 0.5A 100Mbps",
+    "slug": "poe-adapter-48v-05a-100mbps",
+    "category": 6,
+    "description": "POE Adapter 48V 0.5A 100Mbps - Professional grade product from Spylink Networks",
+    "price": "350.00",
+    "stock": 50,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "POE Injector",
+      "speed": "100Mbps",
+      "voltage": "48V"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.370Z",
+    "updated_at": "2026-05-24T16:51:27.749Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 70,
+  "fields": {
+    "name": "POE Adapter 24V 1A 100Mbps",
+    "slug": "poe-adapter-24v-1a-100mbps",
+    "category": 6,
+    "description": "POE Adapter 24V 1A 100Mbps - Professional grade product from Spylink Networks",
+    "price": "350.00",
+    "stock": 45,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "POE Injector",
+      "speed": "100Mbps",
+      "voltage": "24V"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.372Z",
+    "updated_at": "2026-05-24T16:51:27.747Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 71,
+  "fields": {
+    "name": "USB to LAN 3.0",
+    "slug": "usb-to-lan-30",
+    "category": 3,
+    "description": "USB to LAN 3.0 - Professional grade product from Spylink Networks",
+    "price": "700.00",
+    "stock": 60,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Adapter",
+      "interface": "USB 3.0 to Ethernet"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.376Z",
+    "updated_at": "2026-05-24T16:51:27.746Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 72,
+  "fields": {
+    "name": "Type C to LAN 3.0",
+    "slug": "type-c-to-lan-30",
+    "category": 3,
+    "description": "Type C to LAN 3.0 - Professional grade product from Spylink Networks",
+    "price": "700.00",
+    "stock": 50,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Adapter",
+      "interface": "Type C to Ethernet"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.378Z",
+    "updated_at": "2026-05-24T16:51:27.745Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 73,
+  "fields": {
+    "name": "Type C to 4 Port Hub",
+    "slug": "type-c-to-4-port-hub",
+    "category": 3,
+    "description": "Type C to 4 Port Hub - Professional grade product from Spylink Networks",
+    "price": "800.00",
+    "stock": 40,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "USB Hub",
+      "ports": "4",
+      "interface": "Type C"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.380Z",
+    "updated_at": "2026-05-24T16:51:27.744Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 74,
+  "fields": {
+    "name": "4 Port POE Switch for CCTV",
+    "slug": "4-port-poe-switch-for-cctv",
+    "category": 6,
+    "description": "4 Port POE Switch for CCTV - Professional grade product from Spylink Networks",
+    "price": "3200.00",
+    "stock": 30,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "use": "CCTV",
+      "type": "POE Switch",
+      "ports": "4"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.383Z",
+    "updated_at": "2026-05-24T16:51:27.743Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 75,
+  "fields": {
+    "name": "6 Port Gigabit POE Switch",
+    "slug": "6-port-gigabit-poe-switch",
+    "category": 6,
+    "description": "6 Port Gigabit POE Switch - Professional grade product from Spylink Networks",
+    "price": "4400.00",
+    "stock": 25,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "POE Switch",
+      "ports": "6",
+      "speed": "Gigabit"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.385Z",
+    "updated_at": "2026-05-24T16:51:27.742Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 76,
+  "fields": {
+    "name": "12 Port Gigabit POE Switch",
+    "slug": "12-port-gigabit-poe-switch",
+    "category": 6,
+    "description": "12 Port Gigabit POE Switch - Professional grade product from Spylink Networks",
+    "price": "12500.00",
+    "stock": 15,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "POE Switch",
+      "ports": "12",
+      "speed": "Gigabit"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.388Z",
+    "updated_at": "2026-05-24T16:51:27.741Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 77,
+  "fields": {
+    "name": "24 Port Gigabit POE Switch",
+    "slug": "24-port-gigabit-poe-switch",
+    "category": 6,
+    "description": "24 Port Gigabit POE Switch - Professional grade product from Spylink Networks",
+    "price": "16500.00",
+    "stock": 10,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "POE Switch",
+      "ports": "24",
+      "speed": "Gigabit"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.390Z",
+    "updated_at": "2026-05-24T16:51:27.740Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 78,
+  "fields": {
+    "name": "5 Port Normal Switch",
+    "slug": "5-port-normal-switch",
+    "category": 3,
+    "description": "5 Port Normal Switch - Professional grade product from Spylink Networks",
+    "price": "600.00",
+    "stock": 50,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Switch",
+      "ports": "5"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.393Z",
+    "updated_at": "2026-05-24T16:51:27.739Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 79,
+  "fields": {
+    "name": "8 Port Normal Switch",
+    "slug": "8-port-normal-switch",
+    "category": 3,
+    "description": "8 Port Normal Switch - Professional grade product from Spylink Networks",
+    "price": "750.00",
+    "stock": 45,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Switch",
+      "ports": "8"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.396Z",
+    "updated_at": "2026-05-24T16:51:27.737Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 80,
+  "fields": {
+    "name": "CCTV Power Supply 12V 5A Closed",
+    "slug": "cctv-power-supply-12v-5a-closed",
+    "category": 6,
+    "description": "CCTV Power Supply 12V 5A Closed - Professional grade product from Spylink Networks",
+    "price": "1000.00",
+    "stock": 40,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Power Supply",
+      "current": "5A",
+      "voltage": "12V"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.398Z",
+    "updated_at": "2026-05-24T16:51:27.736Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 81,
+  "fields": {
+    "name": "CCTV Power Supply 12V 10A Closed",
+    "slug": "cctv-power-supply-12v-10a-closed",
+    "category": 6,
+    "description": "CCTV Power Supply 12V 10A Closed - Professional grade product from Spylink Networks",
+    "price": "1550.00",
+    "stock": 35,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Power Supply",
+      "current": "10A",
+      "voltage": "12V"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.401Z",
+    "updated_at": "2026-05-24T16:51:27.735Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 82,
+  "fields": {
+    "name": "CCTV Power Supply 12V 20A Closed",
+    "slug": "cctv-power-supply-12v-20a-closed",
+    "category": 6,
+    "description": "CCTV Power Supply 12V 20A Closed - Professional grade product from Spylink Networks",
+    "price": "2000.00",
+    "stock": 30,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Power Supply",
+      "current": "20A",
+      "voltage": "12V"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.404Z",
+    "updated_at": "2026-05-24T16:51:27.734Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 83,
+  "fields": {
+    "name": "CCTV Power Supply 4 Channel New",
+    "slug": "cctv-power-supply-4-channel-new",
+    "category": 6,
+    "description": "CCTV Power Supply 4 Channel New - Professional grade product from Spylink Networks",
+    "price": "800.00",
+    "stock": 50,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Power Supply",
+      "channels": "4"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.407Z",
+    "updated_at": "2026-05-24T16:51:27.733Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 84,
+  "fields": {
+    "name": "CCTV Power Supply 8 Channel New",
+    "slug": "cctv-power-supply-8-channel-new",
+    "category": 6,
+    "description": "CCTV Power Supply 8 Channel New - Professional grade product from Spylink Networks",
+    "price": "1000.00",
+    "stock": 40,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Power Supply",
+      "channels": "8"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.410Z",
+    "updated_at": "2026-05-24T16:51:27.732Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 85,
+  "fields": {
+    "name": "CCTV Power Supply 16 Channel New",
+    "slug": "cctv-power-supply-16-channel-new",
+    "category": 6,
+    "description": "CCTV Power Supply 16 Channel New - Professional grade product from Spylink Networks",
+    "price": "1200.00",
+    "stock": 30,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Power Supply",
+      "channels": "16"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.412Z",
+    "updated_at": "2026-05-24T16:51:27.731Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 86,
+  "fields": {
+    "name": "USB Wired Mouse HP Original M10",
+    "slug": "usb-wired-mouse-hp-original-m10",
+    "category": 3,
+    "description": "USB Wired Mouse HP Original M10 - Professional grade product from Spylink Networks",
+    "price": "400.00",
+    "stock": 80,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Mouse",
+      "brand": "HP",
+      "connection": "Wired"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.414Z",
+    "updated_at": "2026-05-24T16:51:27.730Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 87,
+  "fields": {
+    "name": "USB Wired Mouse M20",
+    "slug": "usb-wired-mouse-m20",
+    "category": 3,
+    "description": "USB Wired Mouse M20 - Professional grade product from Spylink Networks",
+    "price": "140.00",
+    "stock": 100,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Mouse",
+      "connection": "Wired"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.417Z",
+    "updated_at": "2026-05-24T16:51:27.729Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 88,
+  "fields": {
+    "name": "USB Wired Mouse M120",
+    "slug": "usb-wired-mouse-m120",
+    "category": 3,
+    "description": "USB Wired Mouse M120 - Professional grade product from Spylink Networks",
+    "price": "180.00",
+    "stock": 90,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Mouse",
+      "connection": "Wired"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.420Z",
+    "updated_at": "2026-05-24T16:51:27.728Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 89,
+  "fields": {
+    "name": "Wireless Mouse 267",
+    "slug": "wireless-mouse-267",
+    "category": 8,
+    "description": "Wireless Mouse 267 - Professional grade product from Spylink Networks",
+    "price": "280.00",
+    "stock": 70,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Mouse",
+      "connection": "Wireless"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.422Z",
+    "updated_at": "2026-05-24T16:51:27.726Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 90,
+  "fields": {
+    "name": "Bluetooth Rechargeable Mouse",
+    "slug": "bluetooth-rechargeable-mouse",
+    "category": 8,
+    "description": "Bluetooth Rechargeable Mouse - Professional grade product from Spylink Networks",
+    "price": "320.00",
+    "stock": 60,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Mouse",
+      "battery": "Rechargeable",
+      "connection": "Bluetooth"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.424Z",
+    "updated_at": "2026-05-24T16:51:27.725Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 91,
+  "fields": {
+    "name": "HP Wireless Mouse S500",
+    "slug": "hp-wireless-mouse-s500",
+    "category": 8,
+    "description": "HP Wireless Mouse S500 - Professional grade product from Spylink Networks",
+    "price": "650.00",
+    "stock": 40,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Mouse",
+      "brand": "HP",
+      "connection": "Wireless"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.428Z",
+    "updated_at": "2026-05-24T16:51:27.724Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 92,
+  "fields": {
+    "name": "Gaming Mouse Logitech G102",
+    "slug": "gaming-mouse-logitech-g102",
+    "category": 8,
+    "description": "Gaming Mouse Logitech G102 - Professional grade product from Spylink Networks",
+    "price": "300.00",
+    "stock": 50,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Gaming Mouse",
+      "brand": "Logitech",
+      "model": "G102"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.430Z",
+    "updated_at": "2026-05-24T16:51:27.723Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 93,
+  "fields": {
+    "name": "USB Keyboard Antlop",
+    "slug": "usb-keyboard-antlop",
+    "category": 3,
+    "description": "USB Keyboard Antlop - Professional grade product from Spylink Networks",
+    "price": "320.00",
+    "stock": 60,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Keyboard",
+      "connection": "Wired"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.433Z",
+    "updated_at": "2026-05-24T16:51:27.722Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 94,
+  "fields": {
+    "name": "Wireless Keyboard & Mouse Combo HK-6800",
+    "slug": "wireless-keyboard-&-mouse-combo-hk-6800",
+    "category": 8,
+    "description": "Wireless Keyboard & Mouse Combo HK-6800 - Professional grade product from Spylink Networks",
+    "price": "1000.00",
+    "stock": 30,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Combo",
+      "model": "HK-6800",
+      "connection": "Wireless"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.435Z",
+    "updated_at": "2026-05-24T16:51:27.721Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 95,
+  "fields": {
+    "name": "HDMI to VGA with Audio",
+    "slug": "hdmi-to-vga-with-audio",
+    "category": 3,
+    "description": "HDMI to VGA with Audio - Professional grade product from Spylink Networks",
+    "price": "300.00",
+    "stock": 80,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "to": "VGA",
+      "from": "HDMI",
+      "type": "Converter",
+      "audio": "Yes"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.438Z",
+    "updated_at": "2026-05-24T16:51:27.720Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 96,
+  "fields": {
+    "name": "VGA to HDMI Converter Box",
+    "slug": "vga-to-hdmi-converter-box",
+    "category": 3,
+    "description": "VGA to HDMI Converter Box - Professional grade product from Spylink Networks",
+    "price": "600.00",
+    "stock": 60,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "to": "HDMI",
+      "from": "VGA",
+      "type": "Converter",
+      "powered": "Yes"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.440Z",
+    "updated_at": "2026-05-24T16:51:27.718Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 97,
+  "fields": {
+    "name": "DisplayPort to HDMI Converter",
+    "slug": "displayport-to-hdmi-converter",
+    "category": 3,
+    "description": "DisplayPort to HDMI Converter - Professional grade product from Spylink Networks",
+    "price": "300.00",
+    "stock": 50,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "to": "HDMI",
+      "from": "DisplayPort",
+      "type": "Converter"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.444Z",
+    "updated_at": "2026-05-24T16:51:27.717Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 98,
+  "fields": {
+    "name": "USB to HDMI 3.0",
+    "slug": "usb-to-hdmi-30",
+    "category": 3,
+    "description": "USB to HDMI 3.0 - Professional grade product from Spylink Networks",
+    "price": "850.00",
+    "stock": 40,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Adapter",
+      "output": "HDMI",
+      "interface": "USB 3.0"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.446Z",
+    "updated_at": "2026-05-24T16:51:27.716Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 99,
+  "fields": {
+    "name": "Type C to HDMI + VGA",
+    "slug": "type-c-to-hdmi-+-vga",
+    "category": 3,
+    "description": "Type C to HDMI + VGA - Professional grade product from Spylink Networks",
+    "price": "1000.00",
+    "stock": 35,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Adapter",
+      "outputs": [
+        "HDMI",
+        "VGA"
+      ],
+      "interface": "Type C"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.449Z",
+    "updated_at": "2026-05-24T16:51:27.715Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 100,
+  "fields": {
+    "name": "Type C to VGA Converter",
+    "slug": "type-c-to-vga-converter",
+    "category": 3,
+    "description": "Type C to VGA Converter - Professional grade product from Spylink Networks",
+    "price": "650.00",
+    "stock": 45,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Converter",
+      "output": "VGA",
+      "interface": "Type C"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.451Z",
+    "updated_at": "2026-05-24T16:51:27.714Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 101,
+  "fields": {
+    "name": "Laptop Bag India Quality",
+    "slug": "laptop-bag-india-quality",
+    "category": 7,
+    "description": "Laptop Bag India Quality - Professional grade product from Spylink Networks",
+    "price": "600.00",
+    "stock": 50,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Laptop Bag",
+      "material": "Fabric"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.453Z",
+    "updated_at": "2026-05-24T16:51:27.713Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 102,
+  "fields": {
+    "name": "Laptop Bag Heavy Quality 615",
+    "slug": "laptop-bag-heavy-quality-615",
+    "category": 7,
+    "description": "Laptop Bag Heavy Quality 615 - Professional grade product from Spylink Networks",
+    "price": "1800.00",
+    "stock": 30,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Laptop Bag",
+      "quality": "Heavy"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.456Z",
+    "updated_at": "2026-05-24T16:51:27.712Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 103,
+  "fields": {
+    "name": "Laptop Sleeve 14\"",
+    "slug": "laptop-sleeve-14",
+    "category": 7,
+    "description": "Laptop Sleeve 14\" - Professional grade product from Spylink Networks",
+    "price": "250.00",
+    "stock": 60,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "size": "14\"",
+      "type": "Laptop Sleeve"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.459Z",
+    "updated_at": "2026-05-24T16:51:27.711Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 104,
+  "fields": {
+    "name": "Laptop Sleeve 15.6\"",
+    "slug": "laptop-sleeve-156",
+    "category": 7,
+    "description": "Laptop Sleeve 15.6\" - Professional grade product from Spylink Networks",
+    "price": "270.00",
+    "stock": 55,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "size": "15.6\"",
+      "type": "Laptop Sleeve"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.462Z",
+    "updated_at": "2026-05-24T16:51:27.710Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 105,
+  "fields": {
+    "name": "Laptop Stand with Fan Heavy",
+    "slug": "laptop-stand-with-fan-heavy",
+    "category": 7,
+    "description": "Laptop Stand with Fan Heavy - Professional grade product from Spylink Networks",
+    "price": "1200.00",
+    "stock": 40,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Cooling Pad",
+      "feature": "with Fan"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.465Z",
+    "updated_at": "2026-05-24T16:51:27.709Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 106,
+  "fields": {
+    "name": "Laptop Stand Aluminium",
+    "slug": "laptop-stand-aluminium",
+    "category": 7,
+    "description": "Laptop Stand Aluminium - Professional grade product from Spylink Networks",
+    "price": "800.00",
+    "stock": 50,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Laptop Stand",
+      "material": "Aluminium"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.467Z",
+    "updated_at": "2026-05-24T16:51:27.708Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 107,
+  "fields": {
+    "name": "Laptop Stand Metal Round",
+    "slug": "laptop-stand-metal-round",
+    "category": 7,
+    "description": "Laptop Stand Metal Round - Professional grade product from Spylink Networks",
+    "price": "600.00",
+    "stock": 45,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Laptop Stand",
+      "shape": "Round",
+      "material": "Metal"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.470Z",
+    "updated_at": "2026-05-24T16:51:27.707Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 108,
+  "fields": {
+    "name": "Wall Mount 14\"-42\" Fixed",
+    "slug": "wall-mount-14-42-fixed",
+    "category": 10,
+    "description": "Wall Mount 14\"-42\" Fixed - Professional grade product from Spylink Networks",
+    "price": "150.00",
+    "stock": 60,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "size": "14-42\"",
+      "type": "TV Mount",
+      "movement": "Fixed"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.472Z",
+    "updated_at": "2026-05-24T16:51:27.705Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 109,
+  "fields": {
+    "name": "Wall Mount 26\"-63\" Fixed",
+    "slug": "wall-mount-26-63-fixed",
+    "category": 10,
+    "description": "Wall Mount 26\"-63\" Fixed - Professional grade product from Spylink Networks",
+    "price": "300.00",
+    "stock": 50,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "size": "26-63\"",
+      "type": "TV Mount",
+      "movement": "Fixed"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.475Z",
+    "updated_at": "2026-05-24T16:51:27.704Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 110,
+  "fields": {
+    "name": "Wall Mount 15\"-42\" Adjustable",
+    "slug": "wall-mount-15-42-adjustable",
+    "category": 10,
+    "description": "Wall Mount 15\"-42\" Adjustable - Professional grade product from Spylink Networks",
+    "price": "500.00",
+    "stock": 40,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "size": "15-42\"",
+      "type": "TV Mount",
+      "movement": "Tilt"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:25:47.478Z",
+    "updated_at": "2026-05-24T16:51:27.703Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 111,
+  "fields": {
+    "name": "Cabinet 4U with Fan",
+    "slug": "cabinet-4u-with-fan",
+    "category": 10,
+    "description": "Cabinet 4U with Fan - Professional grade product from Spylink Networks",
+    "price": "4700.00",
+    "stock": 20,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "size": "4U",
+      "type": "Server Cabinet",
+      "dimensions": "450x600x300mm"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.480Z",
+    "updated_at": "2026-05-24T16:51:27.702Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 112,
+  "fields": {
+    "name": "Cabinet 6U with Fan",
+    "slug": "cabinet-6u-with-fan",
+    "category": 10,
+    "description": "Cabinet 6U with Fan - Professional grade product from Spylink Networks",
+    "price": "6500.00",
+    "stock": 15,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "size": "6U",
+      "type": "Server Cabinet",
+      "dimensions": "450x600x300mm"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.482Z",
+    "updated_at": "2026-05-24T16:51:27.701Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 113,
+  "fields": {
+    "name": "Cabinet 9U with Fan",
+    "slug": "cabinet-9u-with-fan",
+    "category": 10,
+    "description": "Cabinet 9U with Fan - Professional grade product from Spylink Networks",
+    "price": "8200.00",
+    "stock": 12,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "size": "9U",
+      "type": "Server Cabinet",
+      "dimensions": "450x600x450mm"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.485Z",
+    "updated_at": "2026-05-24T16:51:27.700Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 114,
+  "fields": {
+    "name": "Cabinet 12U",
+    "slug": "cabinet-12u",
+    "category": 10,
+    "description": "Cabinet 12U - Professional grade product from Spylink Networks",
+    "price": "11000.00",
+    "stock": 10,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "size": "12U",
+      "type": "Server Cabinet",
+      "dimensions": "650x600x600mm"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:25:47.487Z",
+    "updated_at": "2026-05-24T16:51:27.699Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 115,
+  "fields": {
+    "name": "TP-Link Archer AX73",
+    "slug": "tp-link-archer-ax73",
+    "category": 1,
+    "description": "AX5400 Dual-Band Wi-Fi 6 Router, covers up to 2,500 sq ft",
+    "price": "12999.00",
+    "stock": 15,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Routers"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:31:42.117Z",
+    "updated_at": "2026-05-24T16:51:27.698Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 116,
+  "fields": {
+    "name": "Google Nest WiFi Pro",
+    "slug": "google-nest-wifi-pro",
+    "category": 1,
+    "description": "WiFi 6E mesh system, covers up to 2,200 sq ft",
+    "price": "24999.00",
+    "stock": 5,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Routers"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:31:42.146Z",
+    "updated_at": "2026-05-24T16:51:27.697Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 117,
+  "fields": {
+    "name": "MikroTik hAP ac2",
+    "slug": "mikrotik-hap-ac2",
+    "category": 1,
+    "description": "Powerful dual-band router with advanced configuration",
+    "price": "8999.00",
+    "stock": 12,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Routers"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:31:42.150Z",
+    "updated_at": "2026-05-24T16:51:27.696Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 118,
+  "fields": {
+    "name": "Ubiquiti UniFi U6-LR",
+    "slug": "ubiquiti-unifi-u6-lr",
+    "category": 12,
+    "description": "Long-range WiFi 6 access point",
+    "price": "18999.00",
+    "stock": 8,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Access Points"
+    },
+    "is_active": true,
+    "is_featured": true,
+    "created_at": "2026-05-24T14:31:42.153Z",
+    "updated_at": "2026-05-24T16:51:27.694Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 119,
+  "fields": {
+    "name": "TP-Link 8-Port Gigabit Switch",
+    "slug": "tp-link-8-port-gigabit-switch",
+    "category": 2,
+    "description": "8-Port Gigabit Unmanaged Switch",
+    "price": "3499.00",
+    "stock": 25,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Switches"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:31:42.155Z",
+    "updated_at": "2026-05-24T16:51:27.693Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 120,
+  "fields": {
+    "name": "Ubiquiti EdgeSwitch 24-Port",
+    "slug": "ubiquiti-edgeswitch-24-port",
+    "category": 2,
+    "description": "24-port managed Gigabit switch",
+    "price": "34999.00",
+    "stock": 3,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Switches"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:31:42.159Z",
+    "updated_at": "2026-05-24T16:51:27.692Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 121,
+  "fields": {
+    "name": "RJ45 Cap Boot Gray",
+    "slug": "rj45-cap-boot-gray",
+    "category": 14,
+    "description": "RJ45 boot cap",
+    "price": "1.00",
+    "stock": 2000,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Connectors"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:31:42.196Z",
+    "updated_at": "2026-05-24T16:51:27.691Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 122,
+  "fields": {
+    "name": "Coupler 1+1",
+    "slug": "coupler-1plus1",
+    "category": 14,
+    "description": "RJ45 coupler 1+1",
+    "price": "25.00",
+    "stock": 500,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Connectors"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:31:42.201Z",
+    "updated_at": "2026-05-24T16:51:27.690Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 123,
+  "fields": {
+    "name": "Coupler 1+2",
+    "slug": "coupler-1plus2",
+    "category": 14,
+    "description": "RJ45 coupler 1+2",
+    "price": "30.00",
+    "stock": 400,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Connectors"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:31:42.204Z",
+    "updated_at": "2026-05-24T16:51:27.689Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 124,
+  "fields": {
+    "name": "Coupler 3+1 Black",
+    "slug": "coupler-3plus1-black",
+    "category": 14,
+    "description": "RJ45 coupler 3+1",
+    "price": "70.00",
+    "stock": 300,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Connectors"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:31:42.208Z",
+    "updated_at": "2026-05-24T16:51:27.688Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 125,
+  "fields": {
+    "name": "Faceplate Single Cat6",
+    "slug": "faceplate-single-cat6",
+    "category": 14,
+    "description": "Single port faceplate",
+    "price": "65.00",
+    "stock": 150,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Connectors"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:31:42.211Z",
+    "updated_at": "2026-05-24T16:51:27.687Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 126,
+  "fields": {
+    "name": "Faceplate Double Cat6",
+    "slug": "faceplate-double-cat6",
+    "category": 14,
+    "description": "Double port faceplate",
+    "price": "65.00",
+    "stock": 150,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Connectors"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:31:42.214Z",
+    "updated_at": "2026-05-24T16:51:27.685Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 127,
+  "fields": {
+    "name": "Crimping Tool Heavy Blue",
+    "slug": "crimping-tool-heavy-blue",
+    "category": 4,
+    "description": "Heavy duty crimping tool",
+    "price": "900.00",
+    "stock": 50,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Networking Tools"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:31:42.217Z",
+    "updated_at": "2026-05-24T16:51:27.684Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 128,
+  "fields": {
+    "name": "Crimping Tool Jakemy JM-CT4-3",
+    "slug": "crimping-tool-jakemy-jm-ct4-3",
+    "category": 4,
+    "description": "Jakemy crimping tool",
+    "price": "500.00",
+    "stock": 40,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Networking Tools"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:31:42.221Z",
+    "updated_at": "2026-05-24T16:51:27.683Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 129,
+  "fields": {
+    "name": "Crimping Tool 568",
+    "slug": "crimping-tool-568",
+    "category": 4,
+    "description": "Crimping tool model 568",
+    "price": "450.00",
+    "stock": 60,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Networking Tools"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:31:42.224Z",
+    "updated_at": "2026-05-24T16:51:27.682Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 130,
+  "fields": {
+    "name": "LAN Tester Professional",
+    "slug": "lan-tester-professional",
+    "category": 4,
+    "description": "Professional cable tester",
+    "price": "2000.00",
+    "stock": 20,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Networking Tools"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:31:42.229Z",
+    "updated_at": "2026-05-24T16:51:27.681Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 131,
+  "fields": {
+    "name": "POE Adapter 48V 0.5A",
+    "slug": "poe-adapter-48v-05a",
+    "category": 6,
+    "description": "48V POE injector",
+    "price": "350.00",
+    "stock": 50,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Power Adapters"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:31:42.246Z",
+    "updated_at": "2026-05-24T16:51:27.680Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 132,
+  "fields": {
+    "name": "Type C to LAN",
+    "slug": "type-c-to-lan",
+    "category": 6,
+    "description": "Type C to Ethernet adapter",
+    "price": "700.00",
+    "stock": 50,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Power Adapters"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:31:42.253Z",
+    "updated_at": "2026-05-24T16:51:27.679Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 133,
+  "fields": {
+    "name": "4 Port POE Switch",
+    "slug": "4-port-poe-switch",
+    "category": 5,
+    "description": "4 port POE switch for CCTV",
+    "price": "3200.00",
+    "stock": 30,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Cctv Security"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:31:42.258Z",
+    "updated_at": "2026-05-24T16:51:27.678Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 134,
+  "fields": {
+    "name": "5 Port Switch",
+    "slug": "5-port-switch",
+    "category": 5,
+    "description": "5 port normal switch",
+    "price": "600.00",
+    "stock": 50,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Cctv Security"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:31:42.262Z",
+    "updated_at": "2026-05-24T16:51:27.677Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 135,
+  "fields": {
+    "name": "8 Port Switch",
+    "slug": "8-port-switch",
+    "category": 5,
+    "description": "8 port normal switch",
+    "price": "750.00",
+    "stock": 45,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Cctv Security"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:31:42.265Z",
+    "updated_at": "2026-05-24T16:51:27.675Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 136,
+  "fields": {
+    "name": "CCTV Power Supply 12V 5A",
+    "slug": "cctv-power-supply-12v-5a",
+    "category": 5,
+    "description": "12V 5A CCTV power supply",
+    "price": "1000.00",
+    "stock": 40,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Cctv Security"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:31:42.268Z",
+    "updated_at": "2026-05-24T16:51:27.674Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 137,
+  "fields": {
+    "name": "CCTV Power Supply 12V 10A",
+    "slug": "cctv-power-supply-12v-10a",
+    "category": 5,
+    "description": "12V 10A CCTV power supply",
+    "price": "1550.00",
+    "stock": 35,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Cctv Security"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:31:42.271Z",
+    "updated_at": "2026-05-24T16:51:27.672Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 138,
+  "fields": {
+    "name": "4 Channel Power Supply",
+    "slug": "4-channel-power-supply",
+    "category": 5,
+    "description": "4 channel CCTV power supply",
+    "price": "800.00",
+    "stock": 50,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Cctv Security"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:31:42.273Z",
+    "updated_at": "2026-05-24T16:51:27.671Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 139,
+  "fields": {
+    "name": "8 Channel Power Supply",
+    "slug": "8-channel-power-supply",
+    "category": 5,
+    "description": "8 channel CCTV power supply",
+    "price": "1000.00",
+    "stock": 40,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Cctv Security"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:31:42.275Z",
+    "updated_at": "2026-05-24T16:51:27.670Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 140,
+  "fields": {
+    "name": "16 Channel Power Supply",
+    "slug": "16-channel-power-supply",
+    "category": 5,
+    "description": "16 channel CCTV power supply",
+    "price": "1200.00",
+    "stock": 30,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Cctv Security"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:31:42.278Z",
+    "updated_at": "2026-05-24T16:51:27.669Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 141,
+  "fields": {
+    "name": "HP Original M10 Mouse",
+    "slug": "hp-original-m10-mouse",
+    "category": 8,
+    "description": "HP original wired mouse",
+    "price": "400.00",
+    "stock": 80,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Computer Peripherals"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:31:42.283Z",
+    "updated_at": "2026-05-24T16:51:27.668Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 142,
+  "fields": {
+    "name": "Logitech G102 Gaming Mouse",
+    "slug": "logitech-g102-gaming-mouse",
+    "category": 8,
+    "description": "Logitech gaming mouse",
+    "price": "300.00",
+    "stock": 50,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Computer Peripherals"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:31:42.290Z",
+    "updated_at": "2026-05-24T16:51:27.667Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 143,
+  "fields": {
+    "name": "Wireless Combo HK-6800",
+    "slug": "wireless-combo-hk-6800",
+    "category": 8,
+    "description": "Wireless keyboard and mouse combo",
+    "price": "1000.00",
+    "stock": 30,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Computer Peripherals"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:31:42.294Z",
+    "updated_at": "2026-05-24T16:51:27.666Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 144,
+  "fields": {
+    "name": "VGA to HDMI Converter",
+    "slug": "vga-to-hdmi-converter",
+    "category": 9,
+    "description": "VGA to HDMI converter box",
+    "price": "600.00",
+    "stock": 60,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Adapters Converters"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:31:42.298Z",
+    "updated_at": "2026-05-24T16:51:27.665Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 145,
+  "fields": {
+    "name": "DisplayPort to HDMI",
+    "slug": "displayport-to-hdmi",
+    "category": 9,
+    "description": "DisplayPort to HDMI adapter",
+    "price": "300.00",
+    "stock": 50,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Adapters Converters"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:31:42.301Z",
+    "updated_at": "2026-05-24T16:51:27.664Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 146,
+  "fields": {
+    "name": "Type C to HDMI+VGA",
+    "slug": "type-c-to-hdmiplusvga",
+    "category": 9,
+    "description": "Type C multiport adapter",
+    "price": "1000.00",
+    "stock": 35,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Adapters Converters"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:31:42.304Z",
+    "updated_at": "2026-05-24T16:51:27.663Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 147,
+  "fields": {
+    "name": "Type C to VGA",
+    "slug": "type-c-to-vga",
+    "category": 9,
+    "description": "Type C to VGA adapter",
+    "price": "650.00",
+    "stock": 45,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Adapters Converters"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:31:42.307Z",
+    "updated_at": "2026-05-24T16:51:27.662Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 148,
+  "fields": {
+    "name": "Laptop Bag Heavy 615",
+    "slug": "laptop-bag-heavy-615",
+    "category": 7,
+    "description": "Heavy duty laptop bag",
+    "price": "1800.00",
+    "stock": 30,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Laptop Accessories"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:31:42.310Z",
+    "updated_at": "2026-05-24T16:51:27.661Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 149,
+  "fields": {
+    "name": "Laptop Stand with Fan",
+    "slug": "laptop-stand-with-fan",
+    "category": 7,
+    "description": "Cooling pad with fan",
+    "price": "1200.00",
+    "stock": 40,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "type": "Laptop Accessories"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:31:42.314Z",
+    "updated_at": "2026-05-24T16:51:27.659Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 150,
+  "fields": {
+    "name": "VGA Cable White 1.5m M/M",
+    "slug": "vga-cable-white-15m-m-m",
+    "category": 15,
+    "description": "White VGA cable 1.5m",
+    "price": "75.00",
+    "stock": 100,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "video-cables"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.352Z",
+    "updated_at": "2026-05-24T16:51:27.658Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 151,
+  "fields": {
+    "name": "VGA Cable White 3m M/M",
+    "slug": "vga-cable-white-3m-m-m",
+    "category": 15,
+    "description": "White VGA cable 3m",
+    "price": "130.00",
+    "stock": 100,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "video-cables"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.363Z",
+    "updated_at": "2026-05-24T16:51:27.656Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 152,
+  "fields": {
+    "name": "VGA Cable White 5m M/M",
+    "slug": "vga-cable-white-5m-m-m",
+    "category": 15,
+    "description": "White VGA cable 5m",
+    "price": "280.00",
+    "stock": 80,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "video-cables"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.365Z",
+    "updated_at": "2026-05-24T16:51:27.655Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 153,
+  "fields": {
+    "name": "VGA Cable White 10m M/M",
+    "slug": "vga-cable-white-10m-m-m",
+    "category": 15,
+    "description": "White VGA cable 10m",
+    "price": "420.00",
+    "stock": 60,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "video-cables"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.368Z",
+    "updated_at": "2026-05-24T16:51:27.654Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 154,
+  "fields": {
+    "name": "VGA Cable White 20m M/M",
+    "slug": "vga-cable-white-20m-m-m",
+    "category": 15,
+    "description": "White VGA cable 20m",
+    "price": "800.00",
+    "stock": 30,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "video-cables"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.372Z",
+    "updated_at": "2026-05-24T16:51:27.653Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 155,
+  "fields": {
+    "name": "VGA Cable White 25m M/M",
+    "slug": "vga-cable-white-25m-m-m",
+    "category": 15,
+    "description": "White VGA cable 25m",
+    "price": "1000.00",
+    "stock": 20,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "video-cables"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.375Z",
+    "updated_at": "2026-05-24T16:51:27.652Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 156,
+  "fields": {
+    "name": "VGA Cable White 30m M/M",
+    "slug": "vga-cable-white-30m-m-m",
+    "category": 15,
+    "description": "White VGA cable 30m",
+    "price": "1200.00",
+    "stock": 15,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "video-cables"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.378Z",
+    "updated_at": "2026-05-24T16:51:27.651Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 157,
+  "fields": {
+    "name": "HDMI to HDMI Cable 10m",
+    "slug": "hdmi-to-hdmi-cable-10m",
+    "category": 15,
+    "description": "HDMI 1.4 cable 10 meters",
+    "price": "420.00",
+    "stock": 60,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "video-cables"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.382Z",
+    "updated_at": "2026-05-24T16:51:27.650Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 158,
+  "fields": {
+    "name": "USB Extension 3.0 Cable 1.5m",
+    "slug": "usb-extension-30-cable-15m",
+    "category": 16,
+    "description": "USB 3.0 extension cable",
+    "price": "210.00",
+    "stock": 60,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "usb-devices"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.393Z",
+    "updated_at": "2026-05-24T16:51:27.649Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 159,
+  "fields": {
+    "name": "USB to USB Cable 1.2m Good 2.0",
+    "slug": "usb-to-usb-cable-12m-good-20",
+    "category": 16,
+    "description": "USB to USB cable",
+    "price": "60.00",
+    "stock": 100,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "usb-devices"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.397Z",
+    "updated_at": "2026-05-24T16:51:27.648Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 160,
+  "fields": {
+    "name": "USB to Micro Cable White",
+    "slug": "usb-to-micro-cable-white",
+    "category": 16,
+    "description": "USB to Micro USB cable",
+    "price": "115.00",
+    "stock": 150,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "usb-devices"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.399Z",
+    "updated_at": "2026-05-24T16:51:27.647Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 161,
+  "fields": {
+    "name": "Cat6 Cable 305m CAT6 4.0mm",
+    "slug": "cat6-cable-305m-cat6-40mm",
+    "category": 18,
+    "description": "Cat6 305m 4.0mm cable",
+    "price": "1800.00",
+    "stock": 20,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "bulk-cables"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.402Z",
+    "updated_at": "2026-05-24T16:51:27.646Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 162,
+  "fields": {
+    "name": "Cat6 Cable 305m Outdoor Full Copper",
+    "slug": "cat6-cable-305m-outdoor-full-copper",
+    "category": 18,
+    "description": "Cat6 outdoor full copper",
+    "price": "4800.00",
+    "stock": 20,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "bulk-cables"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.408Z",
+    "updated_at": "2026-05-24T16:51:27.645Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 163,
+  "fields": {
+    "name": "Patch Code Cat6 0.5m Full Copper Blue",
+    "slug": "patch-code-cat6-05m-full-copper-blue",
+    "category": 19,
+    "description": "Cat6 patch cable 0.5m blue",
+    "price": "100.00",
+    "stock": 120,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "patch-cables"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.412Z",
+    "updated_at": "2026-05-24T16:51:27.643Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 164,
+  "fields": {
+    "name": "Patch Code Cat6 1m Full Copper Blue",
+    "slug": "patch-code-cat6-1m-full-copper-blue",
+    "category": 19,
+    "description": "Cat6 patch cable 1m blue",
+    "price": "120.00",
+    "stock": 100,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "patch-cables"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.421Z",
+    "updated_at": "2026-05-24T16:51:27.642Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 165,
+  "fields": {
+    "name": "Patch Code Cat6 2m Full Copper Blue",
+    "slug": "patch-code-cat6-2m-full-copper-blue",
+    "category": 19,
+    "description": "Cat6 patch cable 2m blue",
+    "price": "180.00",
+    "stock": 80,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "patch-cables"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.424Z",
+    "updated_at": "2026-05-24T16:51:27.641Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 166,
+  "fields": {
+    "name": "Cat6 RJ45 Pass Through Connector",
+    "slug": "cat6-rj45-pass-through-connector",
+    "category": 20,
+    "description": "Cat6 pass through RJ45",
+    "price": "8.00",
+    "stock": 2000,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "connectors-faceplates"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.428Z",
+    "updated_at": "2026-05-24T16:51:27.640Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 167,
+  "fields": {
+    "name": "Coupler 1+1 RJ45",
+    "slug": "coupler-1plus1-rj45",
+    "category": 20,
+    "description": "RJ45 coupler 1+1",
+    "price": "25.00",
+    "stock": 500,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "connectors-faceplates"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.432Z",
+    "updated_at": "2026-05-24T16:51:27.639Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 168,
+  "fields": {
+    "name": "Coupler 1+2 RJ45",
+    "slug": "coupler-1plus2-rj45",
+    "category": 20,
+    "description": "RJ45 coupler 1+2",
+    "price": "30.00",
+    "stock": 400,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "connectors-faceplates"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.435Z",
+    "updated_at": "2026-05-24T16:51:27.638Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 169,
+  "fields": {
+    "name": "Coupler 3+1 Black Good Quality",
+    "slug": "coupler-3plus1-black-good-quality",
+    "category": 20,
+    "description": "RJ45 coupler 3+1 black",
+    "price": "70.00",
+    "stock": 300,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "connectors-faceplates"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.437Z",
+    "updated_at": "2026-05-24T16:51:27.637Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 170,
+  "fields": {
+    "name": "Cat6 ID Module Keystone Jack",
+    "slug": "cat6-id-module-keystone-jack",
+    "category": 20,
+    "description": "Keystone jack Cat6",
+    "price": "80.00",
+    "stock": 200,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "connectors-faceplates"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.441Z",
+    "updated_at": "2026-05-24T16:51:27.636Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 171,
+  "fields": {
+    "name": "RJ45 Port with Small Faceplate",
+    "slug": "rj45-port-with-small-faceplate",
+    "category": 20,
+    "description": "RJ45 wall plate",
+    "price": "170.00",
+    "stock": 100,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "connectors-faceplates"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.444Z",
+    "updated_at": "2026-05-24T16:51:27.635Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 172,
+  "fields": {
+    "name": "HDMI Port with Small Faceplate",
+    "slug": "hdmi-port-with-small-faceplate",
+    "category": 20,
+    "description": "HDMI wall plate",
+    "price": "180.00",
+    "stock": 100,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "connectors-faceplates"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.447Z",
+    "updated_at": "2026-05-24T16:51:27.634Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 173,
+  "fields": {
+    "name": "AV Port with Small Faceplate",
+    "slug": "av-port-with-small-faceplate",
+    "category": 20,
+    "description": "AV wall plate",
+    "price": "170.00",
+    "stock": 100,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "connectors-faceplates"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.450Z",
+    "updated_at": "2026-05-24T16:51:27.633Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 174,
+  "fields": {
+    "name": "Crimping Tool Good Quality 568",
+    "slug": "crimping-tool-good-quality-568",
+    "category": 4,
+    "description": "Crimping tool model 568",
+    "price": "450.00",
+    "stock": 60,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "networking-tools"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.454Z",
+    "updated_at": "2026-05-24T16:51:27.632Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 175,
+  "fields": {
+    "name": "LAN Tester Professional S in 3",
+    "slug": "lan-tester-professional-s-in-3",
+    "category": 4,
+    "description": "Professional cable tester",
+    "price": "2000.00",
+    "stock": 20,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "networking-tools"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.459Z",
+    "updated_at": "2026-05-24T16:51:27.631Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 176,
+  "fields": {
+    "name": "Punching Tool Professional",
+    "slug": "punching-tool-professional",
+    "category": 4,
+    "description": "Professional punch down tool",
+    "price": "3000.00",
+    "stock": 10,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "networking-tools"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.462Z",
+    "updated_at": "2026-05-24T16:51:27.629Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 177,
+  "fields": {
+    "name": "Power Adapter 9V 1A",
+    "slug": "power-adapter-9v-1a",
+    "category": 6,
+    "description": "9V 1A power adapter",
+    "price": "160.00",
+    "stock": 80,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "power-adapters"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.475Z",
+    "updated_at": "2026-05-24T16:51:27.628Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 178,
+  "fields": {
+    "name": "Power Adapter 5V 1A",
+    "slug": "power-adapter-5v-1a",
+    "category": 6,
+    "description": "5V 1A power adapter",
+    "price": "160.00",
+    "stock": 100,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "power-adapters"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.477Z",
+    "updated_at": "2026-05-24T16:51:27.627Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 179,
+  "fields": {
+    "name": "USB to LAN 3.0 Adapter",
+    "slug": "usb-to-lan-30-adapter",
+    "category": 6,
+    "description": "USB 3.0 to Ethernet adapter",
+    "price": "700.00",
+    "stock": 60,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "power-adapters"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.481Z",
+    "updated_at": "2026-05-24T16:51:27.626Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 180,
+  "fields": {
+    "name": "Type C to LAN 3.0 Adapter",
+    "slug": "type-c-to-lan-30-adapter",
+    "category": 6,
+    "description": "Type C to Ethernet adapter",
+    "price": "700.00",
+    "stock": 50,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "power-adapters"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.483Z",
+    "updated_at": "2026-05-24T16:51:27.625Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 181,
+  "fields": {
+    "name": "Power Code Desktop 1.5m Fused",
+    "slug": "power-code-desktop-15m-fused",
+    "category": 6,
+    "description": "Desktop power cord",
+    "price": "90.00",
+    "stock": 150,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "power-adapters"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.486Z",
+    "updated_at": "2026-05-24T16:51:27.623Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 182,
+  "fields": {
+    "name": "Power Code Laptop 1.5m Fused",
+    "slug": "power-code-laptop-15m-fused",
+    "category": 6,
+    "description": "Laptop power cord",
+    "price": "90.00",
+    "stock": 150,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "power-adapters"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.489Z",
+    "updated_at": "2026-05-24T16:51:27.622Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 183,
+  "fields": {
+    "name": "4 Port POE Switch CCTV",
+    "slug": "4-port-poe-switch-cctv",
+    "category": 5,
+    "description": "4 port POE switch for CCTV",
+    "price": "3200.00",
+    "stock": 30,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "cctv-security"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.492Z",
+    "updated_at": "2026-05-24T16:51:27.621Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 184,
+  "fields": {
+    "name": "CCTV Power Supply 12V 30A Closed",
+    "slug": "cctv-power-supply-12v-30a-closed",
+    "category": 5,
+    "description": "12V 30A CCTV power supply",
+    "price": "2300.00",
+    "stock": 25,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "cctv-security"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.499Z",
+    "updated_at": "2026-05-24T16:51:27.620Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 185,
+  "fields": {
+    "name": "CCTV Power Supply 12V 50A Open",
+    "slug": "cctv-power-supply-12v-50a-open",
+    "category": 5,
+    "description": "12V 50A open power supply",
+    "price": "4200.00",
+    "stock": 20,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "cctv-security"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.502Z",
+    "updated_at": "2026-05-24T16:51:27.619Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 186,
+  "fields": {
+    "name": "BNC Connector with Cable",
+    "slug": "bnc-connector-with-cable",
+    "category": 5,
+    "description": "BNC connector with cable",
+    "price": "20.00",
+    "stock": 500,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "cctv-security"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.508Z",
+    "updated_at": "2026-05-24T16:51:27.618Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 187,
+  "fields": {
+    "name": "DC Power Jack",
+    "slug": "dc-power-jack",
+    "category": 5,
+    "description": "DC power jack connector",
+    "price": "12.00",
+    "stock": 500,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "cctv-security"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.511Z",
+    "updated_at": "2026-05-24T16:51:27.617Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 188,
+  "fields": {
+    "name": "HP Original M10 Wired Mouse",
+    "slug": "hp-original-m10-wired-mouse",
+    "category": 8,
+    "description": "HP original wired mouse",
+    "price": "400.00",
+    "stock": 80,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "computer-peripherals"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.513Z",
+    "updated_at": "2026-05-24T16:51:27.616Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 189,
+  "fields": {
+    "name": "HP Wireless Mouse S1000",
+    "slug": "hp-wireless-mouse-s1000",
+    "category": 8,
+    "description": "HP wireless mouse",
+    "price": "700.00",
+    "stock": 35,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "computer-peripherals"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.519Z",
+    "updated_at": "2026-05-24T16:51:27.615Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 190,
+  "fields": {
+    "name": "HP Wireless Mouse S1500",
+    "slug": "hp-wireless-mouse-s1500",
+    "category": 8,
+    "description": "HP wireless mouse",
+    "price": "750.00",
+    "stock": 30,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "computer-peripherals"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.522Z",
+    "updated_at": "2026-05-24T16:51:27.614Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 191,
+  "fields": {
+    "name": "Gaming Mouse HP Original M220",
+    "slug": "gaming-mouse-hp-original-m220",
+    "category": 8,
+    "description": "HP gaming mouse",
+    "price": "800.00",
+    "stock": 40,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "computer-peripherals"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.526Z",
+    "updated_at": "2026-05-24T16:51:27.612Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 192,
+  "fields": {
+    "name": "Gaming Mouse HP Original G160",
+    "slug": "gaming-mouse-hp-original-g160",
+    "category": 8,
+    "description": "HP gaming mouse",
+    "price": "700.00",
+    "stock": 40,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "computer-peripherals"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.528Z",
+    "updated_at": "2026-05-24T16:51:27.611Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 193,
+  "fields": {
+    "name": "Gaming Mouse HP Original M200",
+    "slug": "gaming-mouse-hp-original-m200",
+    "category": 8,
+    "description": "HP gaming mouse",
+    "price": "700.00",
+    "stock": 40,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "computer-peripherals"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.530Z",
+    "updated_at": "2026-05-24T16:51:27.610Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 194,
+  "fields": {
+    "name": "Mini Wireless Keyboard & Mouse White",
+    "slug": "mini-wireless-keyboard-&-mouse-white",
+    "category": 8,
+    "description": "Mini wireless keyboard mouse",
+    "price": "800.00",
+    "stock": 25,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "computer-peripherals"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.534Z",
+    "updated_at": "2026-05-24T16:51:27.609Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 195,
+  "fields": {
+    "name": "10 Inch Bluetooth Keyboard Charging",
+    "slug": "10-inch-bluetooth-keyboard-charging",
+    "category": 8,
+    "description": "10 inch Bluetooth keyboard",
+    "price": "500.00",
+    "stock": 30,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "computer-peripherals"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.536Z",
+    "updated_at": "2026-05-24T16:51:27.608Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 196,
+  "fields": {
+    "name": "Surface Mousepad",
+    "slug": "surface-mousepad",
+    "category": 8,
+    "description": "Surface mousepad",
+    "price": "30.00",
+    "stock": 200,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "computer-peripherals"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.540Z",
+    "updated_at": "2026-05-24T16:51:27.606Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 197,
+  "fields": {
+    "name": "Gaming Mousepad Heavy One",
+    "slug": "gaming-mousepad-heavy-one",
+    "category": 8,
+    "description": "Heavy gaming mousepad",
+    "price": "200.00",
+    "stock": 100,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "computer-peripherals"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.543Z",
+    "updated_at": "2026-05-24T16:51:27.605Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 198,
+  "fields": {
+    "name": "DisplayPort to VGA Converter",
+    "slug": "displayport-to-vga-converter",
+    "category": 9,
+    "description": "DisplayPort to VGA adapter",
+    "price": "300.00",
+    "stock": 50,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "adapters-converters"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.548Z",
+    "updated_at": "2026-05-24T16:51:27.604Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 199,
+  "fields": {
+    "name": "USB to HDMI 3.0 Adapter",
+    "slug": "usb-to-hdmi-30-adapter",
+    "category": 9,
+    "description": "USB 3.0 to HDMI adapter",
+    "price": "850.00",
+    "stock": 40,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "adapters-converters"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.550Z",
+    "updated_at": "2026-05-24T16:51:27.603Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 200,
+  "fields": {
+    "name": "USB to HDMI + VGA 3.0",
+    "slug": "usb-to-hdmi-plus-vga-30",
+    "category": 9,
+    "description": "USB to HDMI and VGA adapter",
+    "price": "1000.00",
+    "stock": 35,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "adapters-converters"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.553Z",
+    "updated_at": "2026-05-24T16:51:27.602Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 201,
+  "fields": {
+    "name": "Type C to HDMI+VGA Converter",
+    "slug": "type-c-to-hdmiplusvga-converter",
+    "category": 9,
+    "description": "Type C multiport adapter",
+    "price": "1000.00",
+    "stock": 35,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "adapters-converters"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.556Z",
+    "updated_at": "2026-05-24T16:51:27.601Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 202,
+  "fields": {
+    "name": "Mini DP to HDMI Converter",
+    "slug": "mini-dp-to-hdmi-converter",
+    "category": 9,
+    "description": "Mini DisplayPort to HDMI",
+    "price": "300.00",
+    "stock": 50,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "adapters-converters"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.561Z",
+    "updated_at": "2026-05-24T16:51:27.600Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 203,
+  "fields": {
+    "name": "USB 4 Port Hub 3.0",
+    "slug": "usb-4-port-hub-30",
+    "category": 9,
+    "description": "USB 3.0 4 port hub",
+    "price": "500.00",
+    "stock": 60,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "adapters-converters"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.564Z",
+    "updated_at": "2026-05-24T16:51:27.599Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 204,
+  "fields": {
+    "name": "USB 7 Port Hub 3.0",
+    "slug": "usb-7-port-hub-30",
+    "category": 9,
+    "description": "USB 3.0 7 port hub",
+    "price": "800.00",
+    "stock": 40,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "adapters-converters"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.566Z",
+    "updated_at": "2026-05-24T16:51:27.598Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 205,
+  "fields": {
+    "name": "VGA Gender Changer F-F",
+    "slug": "vga-gender-changer-f-f",
+    "category": 9,
+    "description": "VGA gender changer",
+    "price": "60.00",
+    "stock": 100,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "adapters-converters"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.568Z",
+    "updated_at": "2026-05-24T16:51:27.596Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 206,
+  "fields": {
+    "name": "Laptop Bag Normal Fashion Sport",
+    "slug": "laptop-bag-normal-fashion-sport",
+    "category": 7,
+    "description": "Fashion laptop bag",
+    "price": "850.00",
+    "stock": 40,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "laptop-accessories"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.574Z",
+    "updated_at": "2026-05-24T16:51:27.595Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 207,
+  "fields": {
+    "name": "Laptop Bag Good Quality Z-02",
+    "slug": "laptop-bag-good-quality-z-02",
+    "category": 7,
+    "description": "Good quality laptop bag",
+    "price": "1100.00",
+    "stock": 35,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "laptop-accessories"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.579Z",
+    "updated_at": "2026-05-24T16:51:27.593Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 208,
+  "fields": {
+    "name": "Laptop Sleeve 10\"",
+    "slug": "laptop-sleeve-10",
+    "category": 7,
+    "description": "10 inch laptop sleeve",
+    "price": "130.00",
+    "stock": 60,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "laptop-accessories"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.581Z",
+    "updated_at": "2026-05-24T16:51:27.592Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 209,
+  "fields": {
+    "name": "Laptop Sleeve 12\"",
+    "slug": "laptop-sleeve-12",
+    "category": 7,
+    "description": "12 inch laptop sleeve",
+    "price": "160.00",
+    "stock": 60,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "laptop-accessories"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.584Z",
+    "updated_at": "2026-05-24T16:51:27.591Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 210,
+  "fields": {
+    "name": "Laptop Sleeve 13\"",
+    "slug": "laptop-sleeve-13",
+    "category": 7,
+    "description": "13 inch laptop sleeve",
+    "price": "230.00",
+    "stock": 55,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "laptop-accessories"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.586Z",
+    "updated_at": "2026-05-24T16:51:27.590Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 211,
+  "fields": {
+    "name": "Laptop Pad",
+    "slug": "laptop-pad",
+    "category": 7,
+    "description": "Laptop pad/cushion",
+    "price": "450.00",
+    "stock": 50,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "laptop-accessories"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.593Z",
+    "updated_at": "2026-05-24T16:51:27.589Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 212,
+  "fields": {
+    "name": "Laptop Tool Kit Jeckly-8100",
+    "slug": "laptop-tool-kit-jeckly-8100",
+    "category": 7,
+    "description": "Laptop repair kit",
+    "price": "500.00",
+    "stock": 30,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "laptop-accessories"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.596Z",
+    "updated_at": "2026-05-24T16:51:27.588Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 213,
+  "fields": {
+    "name": "Laptop Tool Kit Jeckly-8139",
+    "slug": "laptop-tool-kit-jeckly-8139",
+    "category": 7,
+    "description": "Laptop repair tool kit",
+    "price": "2000.00",
+    "stock": 25,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "laptop-accessories"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.598Z",
+    "updated_at": "2026-05-24T16:51:27.587Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 214,
+  "fields": {
+    "name": "TV Wall Mount 14-42\" Fixed",
+    "slug": "tv-wall-mount-14-42-fixed",
+    "category": 10,
+    "description": "Fixed TV wall mount 14-42\"",
+    "price": "150.00",
+    "stock": 60,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "mounts-cabinets"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.600Z",
+    "updated_at": "2026-05-24T16:51:27.586Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 215,
+  "fields": {
+    "name": "TV Wall Mount 26-63\" Fixed",
+    "slug": "tv-wall-mount-26-63-fixed",
+    "category": 10,
+    "description": "Fixed TV wall mount 26-63\"",
+    "price": "300.00",
+    "stock": 50,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "mounts-cabinets"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.603Z",
+    "updated_at": "2026-05-24T16:51:27.585Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 216,
+  "fields": {
+    "name": "TV Wall Mount 15-42\" Adjustable",
+    "slug": "tv-wall-mount-15-42-adjustable",
+    "category": 10,
+    "description": "Tilting TV wall mount",
+    "price": "500.00",
+    "stock": 40,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "mounts-cabinets"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.607Z",
+    "updated_at": "2026-05-24T16:51:27.584Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 217,
+  "fields": {
+    "name": "TV Wall Mount 25-55\" Adjustable",
+    "slug": "tv-wall-mount-25-55-adjustable",
+    "category": 10,
+    "description": "Tilting TV wall mount",
+    "price": "550.00",
+    "stock": 40,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "mounts-cabinets"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.609Z",
+    "updated_at": "2026-05-24T16:51:27.583Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 218,
+  "fields": {
+    "name": "TV Wall Mount 34-70\" Adjustable",
+    "slug": "tv-wall-mount-34-70-adjustable",
+    "category": 10,
+    "description": "Tilting TV wall mount large",
+    "price": "700.00",
+    "stock": 35,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "mounts-cabinets"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.612Z",
+    "updated_at": "2026-05-24T16:51:27.581Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 219,
+  "fields": {
+    "name": "TV Wall Mount 14-55\" Movable Full Motion",
+    "slug": "tv-wall-mount-14-55-movable-full-motion",
+    "category": 10,
+    "description": "Full motion TV mount",
+    "price": "650.00",
+    "stock": 30,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "mounts-cabinets"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.614Z",
+    "updated_at": "2026-05-24T16:51:27.580Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 220,
+  "fields": {
+    "name": "Projector Ceiling Mount 1-1 Iron",
+    "slug": "projector-ceiling-mount-1-1-iron",
+    "category": 10,
+    "description": "Projector ceiling mount",
+    "price": "1600.00",
+    "stock": 25,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "mounts-cabinets"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.616Z",
+    "updated_at": "2026-05-24T16:51:27.579Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 221,
+  "fields": {
+    "name": "Projector Ceiling Mount 2-2 Iron",
+    "slug": "projector-ceiling-mount-2-2-iron",
+    "category": 10,
+    "description": "Heavy duty projector mount",
+    "price": "2500.00",
+    "stock": 20,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "mounts-cabinets"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.619Z",
+    "updated_at": "2026-05-24T16:51:27.578Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 222,
+  "fields": {
+    "name": "Server Cabinet 4U with Fan",
+    "slug": "server-cabinet-4u-with-fan",
+    "category": 10,
+    "description": "4U server cabinet 450x600x300mm",
+    "price": "4700.00",
+    "stock": 20,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "mounts-cabinets"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.623Z",
+    "updated_at": "2026-05-24T16:51:27.577Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 223,
+  "fields": {
+    "name": "Server Cabinet 6U with Fan",
+    "slug": "server-cabinet-6u-with-fan",
+    "category": 10,
+    "description": "6U server cabinet 450x600x300mm",
+    "price": "6500.00",
+    "stock": 15,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "mounts-cabinets"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.625Z",
+    "updated_at": "2026-05-24T16:51:27.576Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 224,
+  "fields": {
+    "name": "Server Cabinet 9U with Fan",
+    "slug": "server-cabinet-9u-with-fan",
+    "category": 10,
+    "description": "9U server cabinet 450x600x450mm",
+    "price": "8200.00",
+    "stock": 12,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "mounts-cabinets"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.628Z",
+    "updated_at": "2026-05-24T16:51:27.575Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 225,
+  "fields": {
+    "name": "Server Cabinet 9U 600x600x450mm",
+    "slug": "server-cabinet-9u-600x600x450mm",
+    "category": 10,
+    "description": "9U wide server cabinet",
+    "price": "8700.00",
+    "stock": 10,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "mounts-cabinets"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.630Z",
+    "updated_at": "2026-05-24T16:51:27.574Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 226,
+  "fields": {
+    "name": "Server Cabinet 12U",
+    "slug": "server-cabinet-12u",
+    "category": 10,
+    "description": "12U server cabinet 650x600x600mm",
+    "price": "11000.00",
+    "stock": 10,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "mounts-cabinets"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.632Z",
+    "updated_at": "2026-05-24T16:51:27.573Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 227,
+  "fields": {
+    "name": "Wall Box 85x85x50",
+    "slug": "wall-box-85x85x50",
+    "category": 10,
+    "description": "Small wall box enclosure",
+    "price": "300.00",
+    "stock": 50,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "mounts-cabinets"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.635Z",
+    "updated_at": "2026-05-24T16:51:27.572Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 228,
+  "fields": {
+    "name": "Wall Box 100x100x70",
+    "slug": "wall-box-100x100x70",
+    "category": 10,
+    "description": "Medium wall box",
+    "price": "400.00",
+    "stock": 45,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "mounts-cabinets"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.638Z",
+    "updated_at": "2026-05-24T16:51:27.570Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 229,
+  "fields": {
+    "name": "Wall Box 200x155x80",
+    "slug": "wall-box-200x155x80",
+    "category": 10,
+    "description": "Large wall box",
+    "price": "600.00",
+    "stock": 40,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "mounts-cabinets"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.641Z",
+    "updated_at": "2026-05-24T16:51:27.569Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 230,
+  "fields": {
+    "name": "Wall Box 255x200x80",
+    "slug": "wall-box-255x200x80",
+    "category": 10,
+    "description": "Extra large wall box",
+    "price": "800.00",
+    "stock": 35,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "mounts-cabinets"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.644Z",
+    "updated_at": "2026-05-24T16:51:27.568Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 231,
+  "fields": {
+    "name": "Electric Pop Up Box",
+    "slug": "electric-pop-up-box",
+    "category": 10,
+    "description": "Pop up floor box",
+    "price": "4100.00",
+    "stock": 20,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "mounts-cabinets"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.646Z",
+    "updated_at": "2026-05-24T16:51:27.567Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 232,
+  "fields": {
+    "name": "Electric Pop Up Box with Type C",
+    "slug": "electric-pop-up-box-with-type-c",
+    "category": 10,
+    "description": "Pop up box with USB-C",
+    "price": "2700.00",
+    "stock": 25,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "mounts-cabinets"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.648Z",
+    "updated_at": "2026-05-24T16:51:27.566Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 233,
+  "fields": {
+    "name": "Cable Tie 150mm 100pcs",
+    "slug": "cable-tie-150mm-100pcs",
+    "category": 3,
+    "description": "Cable ties 150mm pack of 100",
+    "price": "60.00",
+    "stock": 500,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "cables-connectors"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.651Z",
+    "updated_at": "2026-05-24T16:51:27.564Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 234,
+  "fields": {
+    "name": "Cable Tie 200mm 100pcs",
+    "slug": "cable-tie-200mm-100pcs",
+    "category": 3,
+    "description": "Cable ties 200mm pack of 100",
+    "price": "70.00",
+    "stock": 500,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "cables-connectors"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.653Z",
+    "updated_at": "2026-05-24T16:51:27.562Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 235,
+  "fields": {
+    "name": "Cable Tie 250mm 100pcs",
+    "slug": "cable-tie-250mm-100pcs",
+    "category": 3,
+    "description": "Cable ties 250mm pack of 100",
+    "price": "90.00",
+    "stock": 500,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "cables-connectors"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.657Z",
+    "updated_at": "2026-05-24T16:51:27.561Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 236,
+  "fields": {
+    "name": "Cable Tie 300mm 100pcs",
+    "slug": "cable-tie-300mm-100pcs",
+    "category": 3,
+    "description": "Cable ties 300mm pack of 100",
+    "price": "80.00",
+    "stock": 500,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "cables-connectors"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.659Z",
+    "updated_at": "2026-05-24T16:51:27.560Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 237,
+  "fields": {
+    "name": "Cable Clip 6mm Round 100pcs",
+    "slug": "cable-clip-6mm-round-100pcs",
+    "category": 3,
+    "description": "Cable clips 6mm pack of 100",
+    "price": "45.00",
+    "stock": 500,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "cables-connectors"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.662Z",
+    "updated_at": "2026-05-24T16:51:27.558Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 238,
+  "fields": {
+    "name": "Cable Clip 8mm Round 100pcs",
+    "slug": "cable-clip-8mm-round-100pcs",
+    "category": 3,
+    "description": "Cable clips 8mm pack of 100",
+    "price": "50.00",
+    "stock": 500,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "cables-connectors"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.664Z",
+    "updated_at": "2026-05-24T16:51:27.557Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 239,
+  "fields": {
+    "name": "Cable Clip 10mm Round 100pcs",
+    "slug": "cable-clip-10mm-round-100pcs",
+    "category": 3,
+    "description": "Cable clips 10mm pack of 100",
+    "price": "60.00",
+    "stock": 500,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "cables-connectors"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.667Z",
+    "updated_at": "2026-05-24T16:51:27.556Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 240,
+  "fields": {
+    "name": "SATA HDD Cable",
+    "slug": "sata-hdd-cable",
+    "category": 3,
+    "description": "SATA data cable",
+    "price": "20.00",
+    "stock": 300,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "cables-connectors"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.669Z",
+    "updated_at": "2026-05-24T16:51:27.555Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 241,
+  "fields": {
+    "name": "SATA Power Cable",
+    "slug": "sata-power-cable",
+    "category": 3,
+    "description": "SATA power cable",
+    "price": "20.00",
+    "stock": 300,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "cables-connectors"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.673Z",
+    "updated_at": "2026-05-24T16:51:27.553Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 242,
+  "fields": {
+    "name": "HDD Cable 3.0 0.5m Good Quality",
+    "slug": "hdd-cable-30-05m-good-quality",
+    "category": 3,
+    "description": "USB 3.0 HDD cable",
+    "price": "170.00",
+    "stock": 100,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "cables-connectors"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.675Z",
+    "updated_at": "2026-05-24T16:51:27.552Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 243,
+  "fields": {
+    "name": "LCD Foam Cleaner Kit",
+    "slug": "lcd-foam-cleaner-kit",
+    "category": 3,
+    "description": "LCD screen cleaning kit",
+    "price": "180.00",
+    "stock": 50,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "cables-connectors"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.677Z",
+    "updated_at": "2026-05-24T16:51:27.551Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 244,
+  "fields": {
+    "name": "PCI LAN Card",
+    "slug": "pci-lan-card",
+    "category": 3,
+    "description": "PCI Ethernet network card",
+    "price": "340.00",
+    "stock": 30,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "cables-connectors"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.680Z",
+    "updated_at": "2026-05-24T16:51:27.550Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 245,
+  "fields": {
+    "name": "PCI VGA Card",
+    "slug": "pci-vga-card",
+    "category": 3,
+    "description": "PCI VGA graphics card",
+    "price": "930.00",
+    "stock": 20,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "cables-connectors"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.683Z",
+    "updated_at": "2026-05-24T16:51:27.549Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 246,
+  "fields": {
+    "name": "PCI Sound Card",
+    "slug": "pci-sound-card",
+    "category": 3,
+    "description": "PCI sound card",
+    "price": "430.00",
+    "stock": 25,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "cables-connectors"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.685Z",
+    "updated_at": "2026-05-24T16:51:27.545Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 247,
+  "fields": {
+    "name": "USB Sound 7.1",
+    "slug": "usb-sound-71",
+    "category": 3,
+    "description": "USB 7.1 sound adapter",
+    "price": "150.00",
+    "stock": 50,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "cables-connectors"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.688Z",
+    "updated_at": "2026-05-24T16:51:27.542Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 248,
+  "fields": {
+    "name": "POU Socket Plastic",
+    "slug": "pou-socket-plastic",
+    "category": 3,
+    "description": "Plastic POU socket",
+    "price": "800.00",
+    "stock": 40,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "cables-connectors"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.691Z",
+    "updated_at": "2026-05-24T16:51:27.541Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 249,
+  "fields": {
+    "name": "POU Socket Aluminium Heavy",
+    "slug": "pou-socket-aluminium-heavy",
+    "category": 3,
+    "description": "Heavy aluminium POU socket",
+    "price": "1800.00",
+    "stock": 30,
+    "image": "",
+    "image_url": "https://picsum.photos/id/0/300/200",
+    "additional_images": [],
+    "specifications": {
+      "warranty": "1 Year",
+      "condition": "New",
+      "category_type": "cables-connectors"
+    },
+    "is_active": true,
+    "is_featured": false,
+    "created_at": "2026-05-24T14:36:17.693Z",
+    "updated_at": "2026-05-24T16:51:27.524Z"
+  }
+},
+{
+  "model": "products.category",
+  "pk": 1,
+  "fields": {
+    "name": "Routers",
+    "slug": "routers",
+    "description": "High-performance routers for home and business",
+    "image": "categories/routers-shop--500x511.webp"
+  }
+},
+{
+  "model": "products.category",
+  "pk": 2,
+  "fields": {
+    "name": "Switches",
+    "slug": "switches",
+    "description": "",
+    "image": "categories/LOGO.png"
+  }
+},
+{
+  "model": "products.category",
+  "pk": 3,
+  "fields": {
+    "name": "Cables & Connectors",
+    "slug": "cables-connectors",
+    "description": "VGA, HDMI, USB, and other connectivity cables",
+    "image": ""
+  }
+},
+{
+  "model": "products.category",
+  "pk": 4,
+  "fields": {
+    "name": "Networking Tools",
+    "slug": "networking-tools",
+    "description": "Crimping tools, testers, and installation equipment",
+    "image": ""
+  }
+},
+{
+  "model": "products.category",
+  "pk": 5,
+  "fields": {
+    "name": "CCTV & Security",
+    "slug": "cctv-security",
+    "description": "Cameras, switches, power supplies for surveillance",
+    "image": ""
+  }
+},
+{
+  "model": "products.category",
+  "pk": 6,
+  "fields": {
+    "name": "Power & Adapters",
+    "slug": "power-adapters",
+    "description": "Power supplies, adapters, and POE injectors",
+    "image": ""
+  }
+},
+{
+  "model": "products.category",
+  "pk": 7,
+  "fields": {
+    "name": "Laptop Accessories",
+    "slug": "laptop-accessories",
+    "description": "Bags, stands, sleeves, and cooling pads",
+    "image": ""
+  }
+},
+{
+  "model": "products.category",
+  "pk": 8,
+  "fields": {
+    "name": "Computer Peripherals",
+    "slug": "computer-peripherals",
+    "description": "Keyboards, mice, and input devices",
+    "image": ""
+  }
+},
+{
+  "model": "products.category",
+  "pk": 9,
+  "fields": {
+    "name": "Adapters & Converters",
+    "slug": "adapters-converters",
+    "description": "HDMI to VGA, USB to LAN, type C adapters",
+    "image": ""
+  }
+},
+{
+  "model": "products.category",
+  "pk": 10,
+  "fields": {
+    "name": "Mounts & Cabinets",
+    "slug": "mounts-cabinets",
+    "description": "Wall mounts, server cabinets, and enclosures",
+    "image": ""
+  }
+},
+{
+  "model": "products.category",
+  "pk": 11,
+  "fields": {
+    "name": "PCI Cards",
+    "slug": "pci-cards",
+    "description": "Network, sound, and VGA PCI expansion cards",
+    "image": ""
+  }
+},
+{
+  "model": "products.category",
+  "pk": 12,
+  "fields": {
+    "name": "Access Points",
+    "slug": "access-points",
+    "description": "WiFi access points for extended coverage",
+    "image": ""
+  }
+},
+{
+  "model": "products.category",
+  "pk": 13,
+  "fields": {
+    "name": "Cables Bulk",
+    "slug": "cables-bulk",
+    "description": "Bulk network cables and accessories",
+    "image": ""
+  }
+},
+{
+  "model": "products.category",
+  "pk": 14,
+  "fields": {
+    "name": "Connectors",
+    "slug": "connectors",
+    "description": "RJ45 connectors, couplers, and faceplates",
+    "image": ""
+  }
+},
+{
+  "model": "products.category",
+  "pk": 15,
+  "fields": {
+    "name": "Video Cables",
+    "slug": "video-cables",
+    "description": "HDMI, VGA, DVI video cables",
+    "image": ""
+  }
+},
+{
+  "model": "products.category",
+  "pk": 16,
+  "fields": {
+    "name": "USB Devices",
+    "slug": "usb-devices",
+    "description": "USB hubs, adapters, and extensions",
+    "image": ""
+  }
+},
+{
+  "model": "products.category",
+  "pk": 17,
+  "fields": {
+    "name": "Audio Cables",
+    "slug": "audio-cables",
+    "description": "Stereo and audio cables",
+    "image": ""
+  }
+},
+{
+  "model": "products.category",
+  "pk": 18,
+  "fields": {
+    "name": "Bulk Cables",
+    "slug": "bulk-cables",
+    "description": "Bulk network cables 305m rolls",
+    "image": ""
+  }
+},
+{
+  "model": "products.category",
+  "pk": 19,
+  "fields": {
+    "name": "Patch Cables",
+    "slug": "patch-cables",
+    "description": "Pre-made patch cables various lengths",
+    "image": ""
+  }
+},
+{
+  "model": "products.category",
+  "pk": 20,
+  "fields": {
+    "name": "Connectors & Faceplates",
+    "slug": "connectors-faceplates",
+    "description": "RJ45 connectors, couplers, faceplates",
+    "image": ""
+  }
+},
+{
+  "model": "products.category",
+  "pk": 21,
+  "fields": {
+    "name": "CCTV Cameras",
+    "slug": "cctv-cameras",
+    "description": "Security cameras and accessories",
+    "image": ""
+  }
+},
+{
+  "model": "products.category",
+  "pk": 22,
+  "fields": {
+    "name": "Server Cabinets",
+    "slug": "server-cabinets",
+    "description": "Server racks and cabinets",
+    "image": ""
+  }
+},
+{
+  "model": "products.category",
+  "pk": 23,
+  "fields": {
+    "name": "Projector Accessories",
+    "slug": "projector-accessories",
+    "description": "Projector mounts and cables",
+    "image": ""
+  }
+},
+{
+  "model": "products.category",
+  "pk": 24,
+  "fields": {
+    "name": "Gaming Accessories",
+    "slug": "gaming-accessories",
+    "description": "Gaming mice, keyboards, pads",
+    "image": ""
+  }
+}
+]

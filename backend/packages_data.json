@@ -1,0 +1,221 @@
+[
+{
+  "model": "packages.internetpackage",
+  "pk": 12,
+  "fields": {
+    "name": "Lite Home",
+    "speed": "7 Mbps",
+    "price": "1500.00",
+    "description": "Perfect for light browsing, emails, and basic internet use",
+    "package_type": "HOME",
+    "features": {
+      "support": "Email support",
+      "ideal_for": "1-2 users",
+      "unlimited": true
+    },
+    "validity_days": 30,
+    "is_active": true,
+    "is_popular": false,
+    "installation_fee": "10000.00",
+    "first_month_free": true,
+    "created_at": "2026-05-24T16:06:58.637Z",
+    "updated_at": "2026-05-24T16:06:58.637Z"
+  }
+},
+{
+  "model": "packages.internetpackage",
+  "pk": 13,
+  "fields": {
+    "name": "Essential Home",
+    "speed": "10 Mbps",
+    "price": "2000.00",
+    "description": "Great for browsing, streaming music, and video calls",
+    "package_type": "HOME",
+    "features": {
+      "support": "Email support",
+      "ideal_for": "2-3 users",
+      "unlimited": true
+    },
+    "validity_days": 30,
+    "is_active": true,
+    "is_popular": true,
+    "installation_fee": "10000.00",
+    "first_month_free": true,
+    "created_at": "2026-05-24T16:06:58.640Z",
+    "updated_at": "2026-05-24T16:06:58.640Z"
+  }
+},
+{
+  "model": "packages.internetpackage",
+  "pk": 14,
+  "fields": {
+    "name": "Standard Home",
+    "speed": "15 Mbps",
+    "price": "2500.00",
+    "description": "Ideal for HD streaming, online gaming, and multiple devices",
+    "package_type": "HOME",
+    "features": {
+      "support": "24/7 Chat support",
+      "ideal_for": "3-4 users",
+      "unlimited": true
+    },
+    "validity_days": 30,
+    "is_active": true,
+    "is_popular": true,
+    "installation_fee": "10000.00",
+    "first_month_free": true,
+    "created_at": "2026-05-24T16:06:58.644Z",
+    "updated_at": "2026-05-24T16:06:58.644Z"
+  }
+},
+{
+  "model": "packages.internetpackage",
+  "pk": 15,
+  "fields": {
+    "name": "Plus Home",
+    "speed": "20 Mbps",
+    "price": "3000.00",
+    "description": "Perfect for families with heavy streaming and gaming needs",
+    "package_type": "HOME",
+    "features": {
+      "wifi_6": true,
+      "support": "24/7 Chat support",
+      "ideal_for": "4-5 users",
+      "unlimited": true
+    },
+    "validity_days": 30,
+    "is_active": true,
+    "is_popular": false,
+    "installation_fee": "10000.00",
+    "first_month_free": true,
+    "created_at": "2026-05-24T16:06:58.649Z",
+    "updated_at": "2026-05-24T16:06:58.649Z"
+  }
+},
+{
+  "model": "packages.internetpackage",
+  "pk": 16,
+  "fields": {
+    "name": "Ultra Home",
+    "speed": "25 Mbps",
+    "price": "3500.00",
+    "description": "High-speed connection for power users and smart homes",
+    "package_type": "HOME",
+    "features": {
+      "wifi_6": true,
+      "support": "24/7 Priority chat",
+      "ideal_for": "5+ users",
+      "static_ip": false,
+      "unlimited": true
+    },
+    "validity_days": 30,
+    "is_active": true,
+    "is_popular": false,
+    "installation_fee": "10000.00",
+    "first_month_free": true,
+    "created_at": "2026-05-24T16:06:58.653Z",
+    "updated_at": "2026-05-24T16:06:58.653Z"
+  }
+},
+{
+  "model": "packages.internetpackage",
+  "pk": 17,
+  "fields": {
+    "name": "Premium Home",
+    "speed": "30 Mbps",
+    "price": "4000.00",
+    "description": "Ultimate home internet for streaming, gaming, and working from home",
+    "package_type": "HOME",
+    "features": {
+      "wifi_6": true,
+      "support": "24/7 Priority chat",
+      "ideal_for": "Heavy users",
+      "static_ip": true,
+      "unlimited": true
+    },
+    "validity_days": 30,
+    "is_active": true,
+    "is_popular": false,
+    "installation_fee": "10000.00",
+    "first_month_free": true,
+    "created_at": "2026-05-24T16:06:58.656Z",
+    "updated_at": "2026-05-24T16:06:58.656Z"
+  }
+},
+{
+  "model": "packages.internetpackage",
+  "pk": 18,
+  "fields": {
+    "name": "Business Starter",
+    "speed": "30 Mbps",
+    "price": "7999.00",
+    "description": "For small businesses and offices starting out",
+    "package_type": "BUSINESS",
+    "features": {
+      "sla": "99.5%",
+      "support": "24/7 Priority support",
+      "ideal_for": "Small offices (5-10 users)",
+      "static_ip": true,
+      "unlimited": true
+    },
+    "validity_days": 30,
+    "is_active": true,
+    "is_popular": true,
+    "installation_fee": "10000.00",
+    "first_month_free": true,
+    "created_at": "2026-05-24T16:06:58.659Z",
+    "updated_at": "2026-05-24T16:06:58.659Z"
+  }
+},
+{
+  "model": "packages.internetpackage",
+  "pk": 19,
+  "fields": {
+    "name": "Business Pro",
+    "speed": "50 Mbps",
+    "price": "12999.00",
+    "description": "For growing businesses with higher demands",
+    "package_type": "BUSINESS",
+    "features": {
+      "sla": "99.7%",
+      "support": "24/7 Priority support",
+      "ideal_for": "Medium offices (10-20 users)",
+      "static_ip": true,
+      "unlimited": true
+    },
+    "validity_days": 30,
+    "is_active": true,
+    "is_popular": false,
+    "installation_fee": "10000.00",
+    "first_month_free": true,
+    "created_at": "2026-05-24T16:06:58.662Z",
+    "updated_at": "2026-05-24T16:06:58.662Z"
+  }
+},
+{
+  "model": "packages.internetpackage",
+  "pk": 20,
+  "fields": {
+    "name": "Business Elite",
+    "speed": "100 Mbps",
+    "price": "19999.00",
+    "description": "For large businesses and enterprises",
+    "package_type": "BUSINESS",
+    "features": {
+      "sla": "99.9%",
+      "support": "24/7 Dedicated support",
+      "ideal_for": "Large offices (20-50 users)",
+      "static_ip": true,
+      "unlimited": true,
+      "priority_routing": true
+    },
+    "validity_days": 30,
+    "is_active": true,
+    "is_popular": false,
+    "installation_fee": "10000.00",
+    "first_month_free": true,
+    "created_at": "2026-05-24T16:06:58.665Z",
+    "updated_at": "2026-05-24T16:06:58.665Z"
+  }
+}
+]
