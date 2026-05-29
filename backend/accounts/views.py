@@ -174,18 +174,18 @@ def forgot_password(request):
     plain_message = strip_tags(html_message)
     
     try:
-        send_mail(
-            subject,
-            plain_message,
-            settings.DEFAULT_FROM_EMAIL,
-            [user.email],
-            html_message=html_message,
-            fail_silently=False
-        )
+        resend.api_key = settings.RESEND_API_KEY
+        resend.Emails.send({
+        "from": f"Spylink Networks <{settings.DEFAULT_FROM_EMAIL}>",
+        "to": [user.email],
+        "subject": subject,
+        "html": html_message,
+        "text": plain_message,
+    })
         return Response({'message': 'Password reset code sent to your email.'}, status=status.HTTP_200_OK)
     except Exception as e:
-        print(f"Email error: {e}")
-        return Response({'error': 'Failed to send email. Please try again.'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+     print(f"Email error: {e}")
+    return Response({'error': 'Failed to send email. Please try again.'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 @api_view(['POST'])
 @permission_classes([permissions.AllowAny])

@@ -1,7 +1,7 @@
 import random
 import string
+import resend
 from datetime import timedelta
-from django.core.mail import send_mail
 from django.template.loader import render_to_string
 from django.conf import settings
 from django.utils.html import strip_tags
@@ -14,10 +14,22 @@ class VerificationService:
         return ''.join(random.choices(string.digits, k=6))
     
     @staticmethod
+    def _send_email(to_email, subject, html_message, plain_message):
+        """Central email sender using Resend API"""
+        resend.api_key = settings.RESEND_API_KEY
+        params = {
+            "from": f"Spylink Networks <{settings.DEFAULT_FROM_EMAIL}>",
+            "to": [to_email],
+            "subject": subject,
+            "html": html_message,
+            "text": plain_message,
+        }
+        resend.Emails.send(params)
+
+    @staticmethod
     def send_verification_email(user):
         code = VerificationService.generate_verification_code()
         
-        # Use timezone.now() instead of datetime.now()
         user.email_verification_code = code
         user.verification_code_expires = timezone.now() + timedelta(minutes=15)
         user.save()
@@ -33,7 +45,6 @@ class VerificationService:
             plain_message = strip_tags(html_message)
         except Exception as e:
             print(f"Template error: {e}")
-            # Fallback plain text message
             plain_message = f"""
             Welcome to Spylink Networks, {user.username}!
             
@@ -49,14 +60,7 @@ class VerificationService:
             html_message = plain_message.replace('\n', '<br>')
         
         try:
-            send_mail(
-                subject,
-                plain_message,
-                settings.DEFAULT_FROM_EMAIL,
-                [user.email],
-                html_message=html_message,
-                fail_silently=False
-            )
+            VerificationService._send_email(user.email, subject, html_message, plain_message)
             return True
         except Exception as e:
             print(f"Email sending error: {e}")
@@ -107,14 +111,7 @@ class VerificationService:
             html_message = plain_message
         
         try:
-            send_mail(
-                subject,
-                plain_message,
-                settings.DEFAULT_FROM_EMAIL,
-                [user.email],
-                html_message=html_message,
-                fail_silently=False
-            )
+            VerificationService._send_email(user.email, subject, html_message, plain_message)
             return True, "New verification code sent"
         except Exception as e:
             return False, f"Error sending email: {e}"
