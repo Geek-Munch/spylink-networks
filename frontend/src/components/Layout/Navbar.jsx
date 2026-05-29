@@ -63,15 +63,44 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          <Link to="/" className="flex items-center space-x-2 group">
-            <motion.div
-              whileHover={{ rotate: 360 }}
-              transition={{ duration: 0.5 }}
-            >
-              <WifiIcon className="h-8 w-8 text-primary-600" />
-            </motion.div>
-            <span className="text-2xl font-bold gradient-text">Spylink</span>
-          </Link>
+          // Find the logo Link or div and add onDoubleClick or onClick with tap detection <Link 
+  to="/" 
+  className="flex items-center space-x-2 group"
+  onClick={(e) => {
+    // Triple tap detection
+    const now = Date.now();
+    if (!window.logoTapCount) window.logoTapCount = 0;
+    if (!window.lastLogoTap) window.lastLogoTap = 0;
+    
+    if (now - window.lastLogoTap < 300) {
+      window.logoTapCount++;
+    } else {
+      window.logoTapCount = 1;
+    }
+    window.lastLogoTap = now;
+    
+    if (window.logoTapCount >= 3) {
+      window.logoTapCount = 0;
+      const token = localStorage.getItem('access_token');
+      if (token) {
+        fetch('https://spylink-backend.onrender.com/api/auth/profile/', {
+          headers: { 'Authorization': `Bearer ${token}` }
+        })
+        .then(res => res.json())
+        .then(user => {
+          if (user.is_staff || user.is_superuser) {
+            window.location.href = '/admin';
+          } else {
+            alert('Admin access only');
+          }
+        })
+        .catch(() => alert('Please login first'));
+      } else {
+        alert('Please login first');
+      }
+    }
+  }}
+>
           
           <div className="hidden md:flex items-center space-x-1">
             {navLinks.map((link) => (
