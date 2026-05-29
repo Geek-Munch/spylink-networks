@@ -50,6 +50,7 @@ urlpatterns = [
     path('migrate/', run_migrations), 
     path('', health_check), 
     path('admin/', admin.site.urls),
+    path('load-fixtures/', load_fixtures),
     
     # Auth endpoints
     path('api/auth/register/', RegisterView.as_view(), name='register'),
