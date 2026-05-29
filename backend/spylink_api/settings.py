@@ -152,7 +152,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
     "https://spylink-networks.vercel.app",  # Your Vercel frontend
-    "https://spylink-networks.onrender.com",
+    "https://spylink-backend.onrender.com",
 ]
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_METHODS = [
