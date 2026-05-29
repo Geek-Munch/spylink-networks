@@ -35,6 +35,11 @@ def load_fixtures(request):
     except Exception as e:
         return HttpResponse(f"Error: {str(e)}<br><br>{traceback.format_exc()}", status=500)
 
+def clear_users(request):
+    from accounts.models import User
+    count, _ = User.objects.all().delete()
+    return HttpResponse(f"Deleted {count} users successfully!")
+
 # Create router
 router = DefaultRouter()
 router.register(r'packages', PackageViewSet, basename='package')
@@ -51,6 +56,7 @@ urlpatterns = [
     path('', health_check), 
     path('admin/', admin.site.urls),
     path('load-fixtures/', load_fixtures),
+    path('clear-users/', clear_users),
     
     # Auth endpoints
     path('api/auth/register/', RegisterView.as_view(), name='register'),
