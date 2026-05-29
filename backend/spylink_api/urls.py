@@ -27,6 +27,14 @@ def run_migrations(request):
     except Exception as e:
         return HttpResponse(f"Error: {str(e)}<br><br>Traceback:<br>{traceback.format_exc()}", status=500)
     
+def load_fixtures(request):
+    try:
+        call_command('loaddata', 'packages_data.json')
+        call_command('loaddata', 'products_data.json')
+        return HttpResponse("Data loaded successfully!")
+    except Exception as e:
+        return HttpResponse(f"Error: {str(e)}<br><br>{traceback.format_exc()}", status=500)
+
 # Create router
 router = DefaultRouter()
 router.register(r'packages', PackageViewSet, basename='package')
@@ -37,11 +45,11 @@ router.register(r'orders', OrderViewSet, basename='order')
 router.register(r'payments', PaymentViewSet, basename='payment')
 
 urlpatterns = [
-     path('migrate/', run_migrations), 
-    path('', health_check), 
-    path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
     path('run-migrations/', run_migrations),
+    path('migrate/', run_migrations), 
+    path('', health_check), 
+    path('admin/', admin.site.urls),
     
     # Auth endpoints
     path('api/auth/register/', RegisterView.as_view(), name='register'),
