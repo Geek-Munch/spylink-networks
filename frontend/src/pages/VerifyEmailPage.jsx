@@ -60,14 +60,21 @@ const VerifyEmailPage = () => {
       });
 
       const data = await response.json();
+      
       if (response.ok) {
-        toast.success('Email verified! Please login with your credentials.');
+        // Save tokens for auto-login
+        if (data.access) {
+          localStorage.setItem('access_token', data.access);
+          localStorage.setItem('refresh_token', data.refresh);
+        }
+        
+        toast.success('Email verified! Redirecting to dashboard...');
         
         sessionStorage.removeItem('pending_user_id');
         sessionStorage.removeItem('pending_email');
         
         setTimeout(() => {
-          navigate('/login');
+          navigate('/dashboard');
         }, 2000);
       } else {
         toast.error(data.error || 'Verification failed');
@@ -80,6 +87,11 @@ const VerifyEmailPage = () => {
   };
 
   const handleResend = async () => {
+    if (!userId) {
+      toast.error('User information not found');
+      return;
+    }
+    
     setResending(true);
     try {
       const response = await fetch(`${API_URL}/auth/resend-verification/`, {

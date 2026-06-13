@@ -34,7 +34,7 @@ const AdminDashboard = () => {
     }
 
     try {
-      const response = await fetch('https://spylink-backend.onrender.com/api/auth/profile/', {
+      const response = await fetch('https://spylink-networks.onrender.com/api/auth/profile/', {
         headers: { 'Authorization': `Bearer ${token}` }
       });
       const data = await response.json();

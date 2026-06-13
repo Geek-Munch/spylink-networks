@@ -60,7 +60,7 @@ const AdminAccess = ({ children }) => {
       // Check admin status
       const token = localStorage.getItem('access_token');
       if (token) {
-        fetch('https://spylink-backend.onrender.com/api/auth/profile/', {
+        fetch('https://spylink-networks.onrender.com/api/auth/profile/', {
           headers: { 'Authorization': `Bearer ${token}` }
         })
         .then(res => res.json())

@@ -27,11 +27,11 @@ const AdminOverview = () => {
     const token = localStorage.getItem('access_token');
     try {
       const [ordersRes, packagesRes, productsRes, subsRes, paymentsRes] = await Promise.all([
-        fetch('https://spylink-backend.onrender.com/api/orders/', { headers: { 'Authorization': `Bearer ${token}` } }),
-        fetch('https://spylink-backend.onrender.com/api/packages/'),
-        fetch('https://spylink-backend.onrender.com/api/products/'),
-        fetch('https://spylink-backend.onrender.com/api/subscriptions/', { headers: { 'Authorization': `Bearer ${token}` } }),
-        fetch('https://spylink-backend.onrender.com/api/payments/', { headers: { 'Authorization': `Bearer ${token}` } })
+        fetch('https://spylink-networks.onrender.com/api/orders/', { headers: { 'Authorization': `Bearer ${token}` } }),
+        fetch('https://spylink-networks.onrender.com/api/packages/'),
+        fetch('https://spylink-networks.onrender.com/api/products/'),
+        fetch('https://spylink-networks.onrender.com/api/subscriptions/', { headers: { 'Authorization': `Bearer ${token}` } }),
+        fetch('https://spylink-networks.onrender.com/api/payments/', { headers: { 'Authorization': `Bearer ${token}` } })
       ]);
 
       const ordersData = await ordersRes.json();
@@ -58,7 +58,7 @@ const AdminOverview = () => {
   const fetchRecentOrders = async () => {
     const token = localStorage.getItem('access_token');
     try {
-      const response = await fetch('https://spylink-backend.onrender.com/api/orders/', {
+      const response = await fetch('https://spylink-networks.onrender.com/api/orders/', {
         headers: { 'Authorization': `Bearer ${token}` }
       });
       const data = await response.json();
